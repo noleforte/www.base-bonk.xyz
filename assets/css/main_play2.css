@@ -499,6 +499,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 	padding: 200px 0 300px 0;
 	position: relative;
 	background-size: cover;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1023.98px) {
