@@ -666,6 +666,7 @@
           isDragging = true;
           startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
           contractSlider.style.cursor = 'grabbing';
+          sliderElement.style.animationPlayState = 'paused';
         }
 
         function drag(e) {
@@ -689,9 +690,11 @@
           if (currentTranslateX < 50) {
             sliderElement.style.transform = 'translateX(0%)';
             currentTranslate = 0;
+            sliderElement.style.animationPlayState = 'running';
           } else {
             sliderElement.style.transform = 'translateX(100%)';
             currentTranslate = 100;
+            sliderElement.style.animationPlayState = 'paused';
           }
         }
 
