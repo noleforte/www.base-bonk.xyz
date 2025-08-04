@@ -710,23 +710,13 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .about__title {
   margin-bottom: 48px;
-  width: -moz-max-content;
-  width: max-content;
+  text-align: center;
   position: relative
 }
 
 .about__title img {
-  position: absolute
-}
-
-.about__title img:first-child {
-  right: 105%;
-  top: 70%
-}
-
-.about__title img:last-child {
-  left: 105%;
-  top: -30%
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1023.98px) {
@@ -919,10 +909,13 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .ai-chat__title {
-  font-size: 100px;
-  color: #3ff4ff;
   margin-bottom: 60px;
   text-align: center;
+}
+
+.ai-chat__title img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -1059,9 +1052,13 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .tokenomics__title {
-  font-size: 100px;
-  color: #3ff4ff;
-  margin-bottom: 60px
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.tokenomics__title img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -1206,7 +1203,12 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .buy__title {
   margin-bottom: 32px;
-  text-align: center
+  text-align: center;
+}
+
+.buy__title img {
+  max-width: 100%;
+  height: auto;
 }
 
 .cex__title {
