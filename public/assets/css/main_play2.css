@@ -1007,6 +1007,28 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   box-shadow: 2px 4px 0px #101228;
 }
 
+.ai-chat__illustration {
+  width: 44%;
+  transform: rotate(-3.3deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-chat__illustration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 3px solid #101228;
+  box-shadow: 4px 6px 0px #101228;
+}
+
+@media screen and (max-width: 1280px) {
+  .ai-chat__illustration {
+    display: none;
+  }
+}
+
 .tokenomics__col {
   padding: 20px 20px 20px 0px;
   width: 66%
