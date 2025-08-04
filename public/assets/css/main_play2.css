@@ -700,11 +700,11 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .about__container {
   display: flex;
-  align-items: center;
-  gap: 90px;
-  z-index: 2;
-  max-width: 90%;
-  margin: 0 auto;
+      align-items: center;
+      gap: 56px;
+      z-index: 2;
+      max-width: 52%;
+      margin: 0 auto;
 }
 
 @media screen and (max-width: 1280px) {
