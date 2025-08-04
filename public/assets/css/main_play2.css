@@ -706,6 +706,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   .hero__col{
     margin: 8px 10px -7px 10px;
   }
+  .about{
+    padding: 0 0 0 0 !important;
+  }
 }
 @media screen and (max-width: 1536px) {
   .header{
