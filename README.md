@@ -1,6 +1,6 @@
 # Based Bonk Website with AI Chat Bot
 
-This is a website for Based Bonk with an integrated AI chat bot powered by OpenAI.
+This is a static website for Based Bonk with an integrated AI chat bot powered by OpenAI.
 
 ## Features
 
@@ -27,6 +27,15 @@ npm run dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Deployment
+
+This site is configured for Vercel deployment:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Add your OpenAI API key as an environment variable in Vercel
+4. Deploy!
 
 ## AI Chat Bot
 
@@ -59,5 +68,5 @@ The chat bot uses the same styling as the tokenomics section:
 - HTML5
 - CSS3
 - JavaScript (ES6+)
-- Next.js (for API routes)
+- Vercel Serverless Functions
 - OpenAI API 
