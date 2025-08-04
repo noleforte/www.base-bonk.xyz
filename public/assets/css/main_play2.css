@@ -707,7 +707,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
     margin: 8px 10px -7px 10px;
   }
   .about{
-    padding: 0 0 0 0 !important;
+    padding: 0px 0px 0px 0px !important;
   }
 }
 @media screen and (max-width: 1536px) {
