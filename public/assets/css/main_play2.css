@@ -783,7 +783,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .tokenomics__inner {
-  background: url(../img/backkk.png) left top no-repeat, #315aff;
+  background: url(../img/backkk.png), #315aff;
   background-size: contain;
   border: 6px solid #101228;
   border-radius: 36px;
@@ -816,7 +816,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .ai-chat__inner {
-  background: url(../img/backkk.png) left top no-repeat, #315aff;
+  background: url(../img/backkk.png), #315aff;
   background-size: contain;
   border: 6px solid #101228;
   border-radius: 36px;
