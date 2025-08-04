@@ -1161,6 +1161,10 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   align-items: center;
   cursor: grab;
   overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .contract:active {
@@ -1188,7 +1192,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .contract__slider::before {
-  content: "← PULL TO REVEAL →";
+  content: "← PULL LEFT TO REVEAL →";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1196,6 +1200,10 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   white-space: nowrap;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   animation: pulse 2s infinite;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 @keyframes pulse {
@@ -1212,6 +1220,10 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 .contract__content {
   position: relative;
   z-index: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 @media screen and (min-width: 1024px) {
