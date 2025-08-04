@@ -709,9 +709,6 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   .about{
     padding: 0px 0px 0px 0px !important;
   }
-  .ai-chat__message{
-    margin-bottom: 100% !important;
-  }
   .ai-chat__title img{
     max-width: 100%;
     height: auto;
