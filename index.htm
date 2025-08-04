@@ -33,6 +33,7 @@
                     </a>
                     <nav class="header__nav">
                         <a href="#home">Home</a>
+                        <a href="#ai-chat">AI Chat</a>
                         <a href="#tokenomics">Tokenomics</a>
                         <a href="#how-to-buy">How to buy?</a>
                     </nav>
@@ -123,6 +124,27 @@
             src="assets/img/about-illustration.png"
             alt=""
           />-->
+                </div>
+            </section>
+            <!--AI CHAT BOT-->
+            <section id="ai-chat" class="ai-chat">
+                <div class="ai-chat__container container">
+                    <div class="ai-chat__inner">
+                        <div class="ai-chat__col">
+                            <h2 class="ai-chat__title">AI Assistant</h2>
+                            <div class="ai-chat__messages" id="chat-messages">
+                                <div class="ai-chat__message ai-chat__message--bot">
+                                    <div class="ai-chat__message-content">
+                                        <p>Hello! I'm KUDAI, your friendly AI assistant. How can I help you today?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ai-chat__input-container">
+                                <input type="text" id="chat-input" class="ai-chat__input" placeholder="Type your message here..." />
+                                <button id="chat-send" class="ai-chat__send-btn btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="tokenomics" class="tokenomics">
@@ -373,6 +395,80 @@
                             .textContent
                     );
                 });
+
+            // AI Chat Bot JavaScript
+            const chatMessages = document.getElementById('chat-messages');
+            const chatInput = document.getElementById('chat-input');
+            const chatSend = document.getElementById('chat-send');
+            let messages = [];
+
+            function addMessage(content, isUser = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `ai-chat__message ai-chat__message--${isUser ? 'user' : 'bot'}`;
+                
+                const messageContent = document.createElement('div');
+                messageContent.className = 'ai-chat__message-content';
+                
+                const messageText = document.createElement('p');
+                messageText.textContent = content;
+                
+                messageContent.appendChild(messageText);
+                messageDiv.appendChild(messageContent);
+                chatMessages.appendChild(messageDiv);
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            async function sendMessage() {
+                const message = chatInput.value.trim();
+                if (!message) return;
+
+                // Add user message
+                addMessage(message, true);
+                messages.push({ message, isUser: true });
+                chatInput.value = '';
+
+                // Show loading
+                const loadingDiv = document.createElement('div');
+                loadingDiv.className = 'ai-chat__message ai-chat__message--bot';
+                loadingDiv.innerHTML = '<div class="ai-chat__message-content"><p>Thinking...</p></div>';
+                chatMessages.appendChild(loadingDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                try {
+                    const response = await fetch('/api/chat', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ messages }),
+                    });
+
+                    const data = await response.json();
+                    
+                    // Remove loading message
+                    chatMessages.removeChild(loadingDiv);
+                    
+                    // Add bot response
+                    addMessage(data.reply, false);
+                    messages.push({ message: data.reply, isUser: false });
+                } catch (error) {
+                    // Remove loading message
+                    chatMessages.removeChild(loadingDiv);
+                    
+                    // Add error message
+                    addMessage("Sorry, I'm having trouble connecting right now. Please try again later!", false);
+                }
+            }
+
+            // Event listeners
+            chatSend.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
         </script>
     </body>
 </html>
