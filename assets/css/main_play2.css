@@ -774,7 +774,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .tokenomics {
-  padding: 50px 0;
+  padding: 103px 0;
   position: relative
 }
 
@@ -793,7 +793,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   display: flex;
   padding: 60px;
   align-items: center;
-  max-width: 800px;
+  max-width: 898px;
   margin: 0 auto;
   width: 90%;
 }
