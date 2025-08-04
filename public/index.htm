@@ -660,7 +660,7 @@
         const sliderElement = contractSlider.querySelector('.contract__slider');
         let isDragging = false;
         let startX = 0;
-        let currentTranslate = -85;
+        let currentTranslate = 0;
 
         function startDragging(e) {
           isDragging = true;
@@ -675,7 +675,7 @@
           const currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
           const diff = currentX - startX;
           const containerWidth = contractSlider.offsetWidth;
-          const translateX = Math.max(-85, Math.min(0, currentTranslate + (diff / containerWidth) * 100));
+          const translateX = Math.max(-100, Math.min(0, currentTranslate + (diff / containerWidth) * 100));
           
           sliderElement.style.transform = `translateX(${translateX}%)`;
         }
@@ -686,12 +686,12 @@
           
           // Snap to either fully open or closed
           const currentTranslateX = parseFloat(sliderElement.style.transform.replace('translateX(', '').replace('%)', ''));
-          if (currentTranslateX > -42.5) {
+          if (currentTranslateX > -50) {
             sliderElement.style.transform = 'translateX(0%)';
             currentTranslate = 0;
           } else {
-            sliderElement.style.transform = 'translateX(-85%)';
-            currentTranslate = -85;
+            sliderElement.style.transform = 'translateX(-100%)';
+            currentTranslate = -100;
           }
         }
 
