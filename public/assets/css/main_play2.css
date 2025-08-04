@@ -678,7 +678,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   .tokenomics__left {
     height: 50%;
     width: auto;
-    bottom: 39%;
+    bottom: 23% !important;
   }
 }
 
