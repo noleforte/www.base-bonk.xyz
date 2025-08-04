@@ -682,6 +682,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
     width: auto;
     bottom: 23% !important;
   }
+  .header{
+    padding: 40px 79px;
+  }
 }
 
 .about__right {
