@@ -14,25 +14,25 @@ module.exports = async (req, res) => {
       return res.status(405).json({ error: 'Method not allowed' });
     }
 
-  const { messages } = req.body;
-  console.log('Received messages:', messages);
-  console.log('API Key exists:', !!process.env.OPENAI_API_KEY);
+    const { messages } = req.body;
+    console.log('Received messages:', messages);
+    console.log('API Key exists:', !!process.env.OPENAI_API_KEY);
 
-  // Проверяем наличие API ключа
-  if (!process.env.OPENAI_API_KEY) {
-    console.error('OpenAI API key is missing');
-    return res.status(200).json({ 
-      reply: "Sorry, the AI service is not properly configured. Please contact support." 
-    });
-  }
+    // Проверяем валидность входящих данных
+    if (!messages || !Array.isArray(messages)) {
+      console.error('Invalid messages format:', messages);
+      return res.status(200).json({ 
+        reply: "Sorry, there was an error with the message format. Please try again." 
+      });
+    }
 
-  // Проверяем валидность входящих данных
-  if (!messages || !Array.isArray(messages)) {
-    console.error('Invalid messages format:', messages);
-    return res.status(200).json({ 
-      reply: "Sorry, there was an error with the message format. Please try again." 
-    });
-  }
+    // Проверяем наличие API ключа
+    if (!process.env.OPENAI_API_KEY) {
+      console.error('OpenAI API key is missing');
+      return res.status(200).json({ 
+        reply: "Hello! I'm KUD, your friendly AI assistant. The AI service is currently being configured. Please try again later!" 
+      });
+    }
 
   try {
     const requestBody = {
@@ -81,13 +81,13 @@ module.exports = async (req, res) => {
   } catch (error) {
     console.error('OpenAI request failed:', error);
     res.status(200).json({ 
-      reply: "Sorry, I'm having trouble connecting right now. Please try again later!" 
+      reply: "Hello! I'm KUD, your friendly AI assistant. I'm having some technical difficulties right now, but I'll be back soon!" 
     });
   }
   } catch (outerError) {
     console.error('Function error:', outerError);
-    res.status(500).json({ 
-      reply: "Sorry, there was an internal server error. Please try again later!" 
+    res.status(200).json({ 
+      reply: "Hello! I'm KUD, your friendly AI assistant. Something went wrong, but I'm here to help when the service is restored!" 
     });
   }
 } 

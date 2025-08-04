@@ -585,7 +585,7 @@
 
       // Contract Slider JavaScript
       const contractSlider = document.getElementById("contract-slider");
-      const sliderElement = contractSlider.querySelector(".contract__slider");
+      const sliderElement = contractSlider?.querySelector(".contract__slider");
       let isDragging = false;
       let startX = 0;
       let currentTranslate = 0;
@@ -596,7 +596,15 @@
         sliderElement
       );
 
+      // Проверяем, что элементы существуют
+      if (!contractSlider || !sliderElement) {
+        console.warn("Contract slider elements not found");
+        return;
+      }
+
       function startDragging(e) {
+        if (!contractSlider || !sliderElement) return;
+        
         console.log("Start dragging");
         isDragging = true;
         startX = e.type === "mousedown" ? e.clientX : e.touches[0].clientX;
@@ -624,7 +632,7 @@
       }
 
       function drag(e) {
-        if (!isDragging) return;
+        if (!isDragging || !contractSlider || !sliderElement) return;
         e.preventDefault();
 
         const currentX =
@@ -648,14 +656,17 @@
       }
 
       function stopDragging() {
+        if (!contractSlider || !sliderElement) return;
+        
         isDragging = false;
         contractSlider.style.cursor = "grab";
 
         // Snap to either fully open or closed
+        const transform = sliderElement.style.transform || "";
         const currentTranslateX = parseFloat(
-          sliderElement.style.transform
+          transform
             .replace("translateX(", "")
-            .replace("%)", "")
+            .replace("%)", "") || "0"
         );
         if (currentTranslateX < 50) {
           sliderElement.style.transform = "translateX(0%)";
