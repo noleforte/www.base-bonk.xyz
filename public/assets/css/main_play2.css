@@ -156,7 +156,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: #101228
+  color: #101228;
+  background-color: #ee96ee;
 }
 
 a {
