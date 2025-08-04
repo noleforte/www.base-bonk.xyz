@@ -1235,13 +1235,13 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .contract__contract {
-  width: calc(100% - 130px);
+  width: calc(100% - 150px);
   word-break: break-all
 }
 
 @media screen and (max-width: 1023.98px) {
   .contract__contract {
-    width: calc(100% - 100px)
+    width: calc(100% - 110px)
   }
 }
 
