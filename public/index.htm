@@ -1,189 +1,298 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>KUDAI</title>
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
-        <link rel="stylesheet" href="assets/css/main_play2.css">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUDAI</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/main_play2.css" />
 
-        <!-- Meta Pixel Code -->
-        <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1244228527441983');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=1244228527441983&ev=PageView&noscript=1"></noscript>
-        <!-- End Meta Pixel Code -->
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__container container">
-                    <a class="header__logo" href="index.html">
-                        <img class="header__logo_full" src="assets/img/Frame 91.png">
-                        <img class="header__logo_icon" src="assets/img/Frame 91.png">
-                    </a>
-                    <nav class="header__nav">
-                        <a href="#home">Home</a>
-                        <a href="#ai-chat">AI Agent</a>
-                        <a href="#tokenomics">Tokenomics</a>
-                        <a href="#how-to-buy">How to buy?</a>
-                    </nav>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1244228527441983");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1244228527441983&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <a class="header__logo" href="index.html">
+            <img class="header__logo_full" src="assets/img/Frame 91.png" />
+            <img class="header__logo_icon" src="assets/img/Frame 91.png" />
+          </a>
+          <nav class="header__nav">
+            <a href="#home">Home</a>
+            <a href="#ai-chat">AI Agent</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#how-to-buy">How to buy?</a>
+          </nav>
 
-                    <a class="header__btn btn" href="https://app.uniswap.org/explore/tokens/base/0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9" target="_blank">Buy $kudai</a>
-                    <button class="header__burger btn">
-                        <span></span><span></span><span></span>
-                    </button>
-                </div>
-            </header>
-            <section id="home" class="hero">
-                <div class="hero__container container">
-                    <div class="hero__col">
-                        <img class="hero__illustration" src="assets/img/IMG_8414.PNG">
-                    </div>
-                    <div class="hero__col">
-                        <!--<h1 class="hero__title">--><img id="text-img
-              " class="hero__illustration2" src="assets/img/IMG_8413.PNG"><!--</h1>-->
-                        <p class="hero__text">
-                            More than ordinary. The community token of Solana
-                            chain.
-                        </p>
-                        <div class="hero__socials">
-                            <a class="hero__social-btn btn btn_icon" href="https://t.me/BasedB0nk" target="_blank">
-                                <svg width="43" height="43" viewbox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M36.603 6.80442C36.603 6.80442 40.0026 5.4788 39.7193 8.69818C39.6249 10.0238 38.775 14.6635 38.1139 19.682L35.8475 34.548C35.8475 34.548 35.6587 36.7258 33.9588 37.1045C32.259 37.4832 29.7093 35.7789 29.2371 35.4001C28.8593 35.1161 22.1546 30.8551 19.7936 28.772C19.1326 28.2039 18.3771 27.0676 19.8881 25.742L29.8037 16.2732C30.9369 15.137 32.0701 12.4857 27.3484 15.7051L14.1276 24.7005C14.1276 24.7005 12.6166 25.6473 9.78364 24.7951L3.64536 22.9014C3.64536 22.9014 1.37892 21.4811 5.25075 20.0607C14.6942 15.6103 26.3097 11.0653 36.603 6.80442Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                            <a class="hero__social-btn btn btn_icon" href="https://x.com/BasedBonk_?t=VBQtrr4MYMBcEgcrclY-SQ&s=09" target="_blank">
-                                <svg width="39" height="39" viewbox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M27.9541 5.34119H32.5933L22.4073 17.8633L34.3078 34.8498H24.9689L17.6572 24.5272L9.28649 34.8498H4.64732L15.4384 21.4566L4.04221 5.34119H13.613L20.2188 14.7709L27.9541 5.34119ZM26.3304 31.9098H28.9021L12.2616 8.17227H9.49828L26.3304 31.9098Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                            <a class="hero__social-btn btn btn_icon" href="https://www.dextools.io/app/en/base/pair-explorer/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7?t=1753282595603" target="_blank">
-                                <svg width="34" height="38" viewbox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.678 2.97126C10.3766 4.12163 8.49377 5.09507 8.49417 5.13466C8.49519 5.23685 14.0176 7.92051 14.2136 7.91397C14.3028 7.91111 14.9496 7.62541 15.6509 7.27916L16.9262 6.64974L18.319 7.33671L19.7118 8.02381L21.9926 7.04037C25.4294 5.55847 25.7864 5.39608 25.7304 5.34152C25.6562 5.26913 24.4235 4.63368 21.0791 2.94415C19.4627 2.12759 17.894 1.32697 17.5928 1.16496C17.2917 1.00296 17.0042 0.872635 16.9539 0.875158C16.9037 0.877681 14.9795 1.82094 12.678 2.97126ZM2.58408 7.98687L0.188343 9.17431V14.3857C0.188343 17.2521 0.219802 19.5971 0.258389 19.5971C0.296844 19.5971 1.47555 19.1069 2.87768 18.5076L5.42702 17.4181V11.9249L6.67279 12.5762C7.63276 13.0776 8.59331 13.5779 9.55444 14.0773L11.1903 14.9272L11.9182 14.6113C12.3747 14.4129 12.8303 14.2126 13.285 14.0103C13.6363 13.8533 14.4988 13.4806 15.2015 13.1818C15.9043 12.883 16.5548 12.5824 16.647 12.5139C16.7696 12.423 15.2754 11.6307 11.1206 9.58341C7.98883 8.04019 5.32596 6.78246 5.20315 6.78849C5.08035 6.79452 3.90177 7.33372 2.58408 7.98687ZM26.1622 8.32033C24.5306 9.02714 23.1944 9.63369 23.1929 9.66828C23.1915 9.70282 24.0808 10.2102 25.1693 10.7956C26.2577 11.3812 27.1482 11.8916 27.1482 11.93C27.1482 11.9684 26.1851 12.4162 25.0081 12.9253C23.8309 13.4343 20.8555 14.7237 18.3959 15.7906L10.1546 19.3651C8.08147 20.2644 6.21281 21.0749 6.002 21.1666C1.76759 23.0059 0.603719 23.5163 0.443887 23.6039C0.283164 23.6921 0.24676 24.2046 0.218153 26.7765L0.184021 29.844L2.3264 30.8915L4.46874 31.9389L7.43942 30.6524C9.07334 29.9449 10.4101 29.329 10.4101 29.2836C10.4101 29.2384 10.1082 29.0496 9.73932 28.864C9.37028 28.6783 8.60851 28.2673 8.04631 27.9505C7.48416 27.6336 6.92361 27.3429 6.80054 27.3044C6.67751 27.2659 6.57864 27.1987 6.58064 27.1548C6.58269 27.1111 7.89084 26.5148 9.48747 25.8297C12.5886 24.4993 14.9619 23.4738 20.0569 21.2629C22.3352 20.2745 24.6138 19.2867 26.8927 18.2995C28.8955 17.432 31.2241 16.4189 32.0674 16.0481L33.6007 15.374L33.6348 12.2715L33.6691 9.16918L31.4962 8.09898C30.301 7.51043 29.2795 7.03032 29.2259 7.03207C29.1724 7.0337 27.7937 7.61335 26.1622 8.32033ZM33.0185 19.5128C32.6983 19.6629 32.0659 19.9439 31.6131 20.1372C31.1603 20.3305 30.301 20.7025 29.7037 20.9641L28.6176 21.4394L28.5928 24.1631C28.5791 25.6611 28.5216 26.8801 28.4651 26.8721C28.3365 26.8538 26.301 25.8521 24.2548 24.8C22.778 24.0408 22.6853 24.0106 22.3382 24.1755C22.1376 24.2709 20.9385 24.7869 19.6736 25.3225C18.4086 25.8579 17.3324 26.331 17.2818 26.3738C17.2313 26.4166 19.7772 27.7406 22.9394 29.3163L28.6888 32.1811L31.1448 30.962C32.4955 30.2916 33.644 29.68 33.6969 29.6031C33.816 29.4301 33.8058 19.2162 33.6866 19.23C33.6394 19.2355 33.3387 19.3627 33.0185 19.5128ZM19.418 31.5014C18.992 31.6772 18.5661 31.8532 18.1403 32.0294C16.8545 32.5632 17.1065 32.5809 15.5768 31.8502C14.558 31.3635 14.1188 31.2134 13.9282 31.2863C13.7852 31.3409 12.5546 31.8721 11.1934 32.4668C9.83218 33.0614 8.67124 33.5479 8.6135 33.5479C8.04239 33.5479 8.99184 34.0922 12.6556 35.8656L16.9523 37.9451L18.7601 37.0887C19.7545 36.6177 21.76 35.6744 23.2169 34.9926C24.6738 34.3106 25.8478 33.735 25.8258 33.7133C25.8037 33.6917 24.5829 33.0902 23.1129 32.3766L20.4402 31.0795L19.418 31.5014Z" fill="currentColor"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                            <a class="hero__social-btn btn btn_icon" href="https://dexscreener.com/base/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7" target="_blank">
-                                <svg width="37" height="43" viewbox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5026 15.4061C23.8119 14.7693 25.4777 13.8319 27.1456 12.5475C27.4973 13.2599 27.5358 13.8815 27.3546 14.3835C27.2262 14.7373 26.9843 15.045 26.6661 15.2898C26.3216 15.5543 25.8913 15.7469 25.4157 15.851C24.5132 16.0493 23.4595 15.9336 22.5026 15.4061ZM22.7296 21.9311L24.4627 22.9076C20.924 24.8423 19.9621 28.4348 18.8193 31.9338C17.6767 28.4348 16.7146 24.8423 13.1761 22.9076L14.9092 21.9311C15.0768 21.8693 15.2201 21.7573 15.3185 21.6112C15.4169 21.4651 15.4654 21.2923 15.457 21.1177C15.2982 17.8407 16.2053 16.3916 17.4288 15.4817C17.8676 15.1558 18.3467 14.9921 18.8193 14.9921C19.292 14.9921 19.771 15.1558 20.21 15.4817C21.4335 16.3916 22.3406 17.8407 22.1818 21.1177C22.1734 21.2923 22.2218 21.4651 22.3202 21.6112C22.4187 21.7573 22.5619 21.8693 22.7296 21.9311ZM18.8193 0.533936C20.8226 0.586401 22.8309 0.96577 24.5738 1.70377C25.7808 2.21549 26.907 2.89142 27.9267 3.6997C28.3872 4.06459 28.7664 4.4171 29.1842 4.82291C30.3108 4.86091 31.9573 3.64 32.7217 2.49758C31.4062 6.70459 25.4031 11.6727 21.2472 13.5737C21.2455 13.573 21.2443 13.572 21.243 13.5712C20.4972 13.0157 19.6583 12.7379 18.8193 12.7379C17.9803 12.7379 17.1416 13.0157 16.3957 13.5712C16.3945 13.5719 16.3933 13.5732 16.3916 13.5737C12.2355 11.6727 6.23262 6.70459 4.91711 2.49758C5.68137 3.64 7.32785 4.86091 8.45447 4.82291C8.87234 4.41724 9.25154 4.06459 9.71192 3.6997C10.7317 2.89142 11.8579 2.21549 13.0648 1.70377C14.8079 0.96577 16.8162 0.586401 18.8193 0.533936ZM15.136 15.4061C13.8269 14.7693 12.1609 13.8319 10.4931 12.5475C10.1415 13.2599 10.103 13.8815 10.284 14.3835C10.4125 14.7373 10.6545 15.045 10.9725 15.2898C11.3172 15.5543 11.7474 15.7469 12.2231 15.851C13.1256 16.0493 14.1792 15.9336 15.136 15.4061Z" fill="currentColor"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.9723 10.9736C29.8905 10.0697 30.6995 9.06927 31.3501 8.17651L31.6805 8.78314C32.7442 10.8591 33.2969 12.9267 33.2969 15.2536L33.2946 18.9459L33.3146 20.86C33.3916 25.5591 34.4339 30.3135 36.795 34.6644L31.855 30.7786L28.3596 36.3117L24.6874 32.9395L18.8193 42.2288L12.9513 32.9397L9.27922 36.3118L5.7838 30.7787L0.843628 34.6645C3.20472 30.3136 4.24703 25.5593 4.32421 20.8602L4.34418 18.9461L4.3419 15.2537C4.3419 12.9267 4.89444 10.8591 5.95843 8.78328L6.28869 8.17665C6.93924 9.06941 7.74815 10.0697 8.66648 10.9738L8.37972 11.5548C7.82262 12.6833 7.63815 13.9451 8.07214 15.1451C8.3519 15.9181 8.8625 16.5809 9.52075 17.0869C10.1599 17.5783 10.9163 17.9096 11.7082 18.0835C12.2241 18.1968 12.7497 18.2434 13.2718 18.2275C13.15 18.9013 13.0968 19.6 13.0933 20.312L8.43337 22.9375L12.0294 24.9038C12.3168 25.061 12.5904 25.2411 12.8474 25.4422C15.8121 28.0388 17.5945 35.7204 18.8195 39.4725C20.0445 35.7204 21.8268 28.0388 24.7917 25.4422C25.0487 25.241 25.3223 25.0609 25.6097 24.9038L29.2057 22.9375L24.5456 20.312C24.5422 19.6 24.4889 18.9013 24.3671 18.2275C24.8893 18.2434 25.4148 18.1968 25.9307 18.0835C26.7226 17.9096 27.4792 17.5783 28.1182 17.0869C28.7763 16.5809 29.287 15.9181 29.5666 15.1451C30.0008 13.9451 29.8162 12.6834 29.2592 11.5548L28.9725 10.9738L28.9723 10.9736Z" fill="currentColor"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                                                        <a class="hero__social-btn btn btn_icon" href="https://app.uniswap.org/explore/tokens/base/0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9" target="_blank">
-                                <img src="assets/img/jupiter-ag.png" alt="Jupiter" width="52" height="52">
-                            </a>
-                        </div>
-                    </div>
+          <a
+            class="header__btn btn"
+            href="https://app.uniswap.org/explore/tokens/base/0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9"
+            target="_blank"
+            >Buy $kudai</a
+          >
+          <button class="header__burger btn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+      <section id="home" class="hero">
+        <div class="hero__container container">
+          <div class="hero__col">
+            <img class="hero__illustration" src="assets/img/IMG_8414.PNG" />
+          </div>
+          <div class="hero__col">
+            <!--<h1 class="hero__title">--><img
+              id="text-img
+              "
+              class="hero__illustration2"
+              src="assets/img/IMG_8413.PNG"
+            /><!--</h1>-->
+            <p class="hero__text">
+              More than ordinary. The community token of Solana chain.
+            </p>
+            <div class="hero__socials">
+              <a
+                class="hero__social-btn btn btn_icon"
+                href="https://t.me/BasedB0nk"
+                target="_blank"
+              >
+                <svg
+                  width="43"
+                  height="43"
+                  viewbox="0 0 43 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M36.603 6.80442C36.603 6.80442 40.0026 5.4788 39.7193 8.69818C39.6249 10.0238 38.775 14.6635 38.1139 19.682L35.8475 34.548C35.8475 34.548 35.6587 36.7258 33.9588 37.1045C32.259 37.4832 29.7093 35.7789 29.2371 35.4001C28.8593 35.1161 22.1546 30.8551 19.7936 28.772C19.1326 28.2039 18.3771 27.0676 19.8881 25.742L29.8037 16.2732C30.9369 15.137 32.0701 12.4857 27.3484 15.7051L14.1276 24.7005C14.1276 24.7005 12.6166 25.6473 9.78364 24.7951L3.64536 22.9014C3.64536 22.9014 1.37892 21.4811 5.25075 20.0607C14.6942 15.6103 26.3097 11.0653 36.603 6.80442Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="hero__social-btn btn btn_icon"
+                href="https://x.com/BasedBonk_?t=VBQtrr4MYMBcEgcrclY-SQ&s=09"
+                target="_blank"
+              >
+                <svg
+                  width="39"
+                  height="39"
+                  viewbox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.9541 5.34119H32.5933L22.4073 17.8633L34.3078 34.8498H24.9689L17.6572 24.5272L9.28649 34.8498H4.64732L15.4384 21.4566L4.04221 5.34119H13.613L20.2188 14.7709L27.9541 5.34119ZM26.3304 31.9098H28.9021L12.2616 8.17227H9.49828L26.3304 31.9098Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="hero__social-btn btn btn_icon"
+                href="https://www.dextools.io/app/en/base/pair-explorer/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7?t=1753282595603"
+                target="_blank"
+              >
+                <svg
+                  width="34"
+                  height="38"
+                  viewbox="0 0 34 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.678 2.97126C10.3766 4.12163 8.49377 5.09507 8.49417 5.13466C8.49519 5.23685 14.0176 7.92051 14.2136 7.91397C14.3028 7.91111 14.9496 7.62541 15.6509 7.27916L16.9262 6.64974L18.319 7.33671L19.7118 8.02381L21.9926 7.04037C25.4294 5.55847 25.7864 5.39608 25.7304 5.34152C25.6562 5.26913 24.4235 4.63368 21.0791 2.94415C19.4627 2.12759 17.894 1.32697 17.5928 1.16496C17.2917 1.00296 17.0042 0.872635 16.9539 0.875158C16.9037 0.877681 14.9795 1.82094 12.678 2.97126ZM2.58408 7.98687L0.188343 9.17431V14.3857C0.188343 17.2521 0.219802 19.5971 0.258389 19.5971C0.296844 19.5971 1.47555 19.1069 2.87768 18.5076L5.42702 17.4181V11.9249L6.67279 12.5762C7.63276 13.0776 8.59331 13.5779 9.55444 14.0773L11.1903 14.9272L11.9182 14.6113C12.3747 14.4129 12.8303 14.2126 13.285 14.0103C13.6363 13.8533 14.4988 13.4806 15.2015 13.1818C15.9043 12.883 16.5548 12.5824 16.647 12.5139C16.7696 12.423 15.2754 11.6307 11.1206 9.58341C7.98883 8.04019 5.32596 6.78246 5.20315 6.78849C5.08035 6.79452 3.90177 7.33372 2.58408 7.98687ZM26.1622 8.32033C24.5306 9.02714 23.1944 9.63369 23.1929 9.66828C23.1915 9.70282 24.0808 10.2102 25.1693 10.7956C26.2577 11.3812 27.1482 11.8916 27.1482 11.93C27.1482 11.9684 26.1851 12.4162 25.0081 12.9253C23.8309 13.4343 20.8555 14.7237 18.3959 15.7906L10.1546 19.3651C8.08147 20.2644 6.21281 21.0749 6.002 21.1666C1.76759 23.0059 0.603719 23.5163 0.443887 23.6039C0.283164 23.6921 0.24676 24.2046 0.218153 26.7765L0.184021 29.844L2.3264 30.8915L4.46874 31.9389L7.43942 30.6524C9.07334 29.9449 10.4101 29.329 10.4101 29.2836C10.4101 29.2384 10.1082 29.0496 9.73932 28.864C9.37028 28.6783 8.60851 28.2673 8.04631 27.9505C7.48416 27.6336 6.92361 27.3429 6.80054 27.3044C6.67751 27.2659 6.57864 27.1987 6.58064 27.1548C6.58269 27.1111 7.89084 26.5148 9.48747 25.8297C12.5886 24.4993 14.9619 23.4738 20.0569 21.2629C22.3352 20.2745 24.6138 19.2867 26.8927 18.2995C28.8955 17.432 31.2241 16.4189 32.0674 16.0481L33.6007 15.374L33.6348 12.2715L33.6691 9.16918L31.4962 8.09898C30.301 7.51043 29.2795 7.03032 29.2259 7.03207C29.1724 7.0337 27.7937 7.61335 26.1622 8.32033ZM33.0185 19.5128C32.6983 19.6629 32.0659 19.9439 31.6131 20.1372C31.1603 20.3305 30.301 20.7025 29.7037 20.9641L28.6176 21.4394L28.5928 24.1631C28.5791 25.6611 28.5216 26.8801 28.4651 26.8721C28.3365 26.8538 26.301 25.8521 24.2548 24.8C22.778 24.0408 22.6853 24.0106 22.3382 24.1755C22.1376 24.2709 20.9385 24.7869 19.6736 25.3225C18.4086 25.8579 17.3324 26.331 17.2818 26.3738C17.2313 26.4166 19.7772 27.7406 22.9394 29.3163L28.6888 32.1811L31.1448 30.962C32.4955 30.2916 33.644 29.68 33.6969 29.6031C33.816 29.4301 33.8058 19.2162 33.6866 19.23C33.6394 19.2355 33.3387 19.3627 33.0185 19.5128ZM19.418 31.5014C18.992 31.6772 18.5661 31.8532 18.1403 32.0294C16.8545 32.5632 17.1065 32.5809 15.5768 31.8502C14.558 31.3635 14.1188 31.2134 13.9282 31.2863C13.7852 31.3409 12.5546 31.8721 11.1934 32.4668C9.83218 33.0614 8.67124 33.5479 8.6135 33.5479C8.04239 33.5479 8.99184 34.0922 12.6556 35.8656L16.9523 37.9451L18.7601 37.0887C19.7545 36.6177 21.76 35.6744 23.2169 34.9926C24.6738 34.3106 25.8478 33.735 25.8258 33.7133C25.8037 33.6917 24.5829 33.0902 23.1129 32.3766L20.4402 31.0795L19.418 31.5014Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                class="hero__social-btn btn btn_icon"
+                href="https://dexscreener.com/base/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7"
+                target="_blank"
+              >
+                <svg
+                  width="37"
+                  height="43"
+                  viewbox="0 0 37 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.5026 15.4061C23.8119 14.7693 25.4777 13.8319 27.1456 12.5475C27.4973 13.2599 27.5358 13.8815 27.3546 14.3835C27.2262 14.7373 26.9843 15.045 26.6661 15.2898C26.3216 15.5543 25.8913 15.7469 25.4157 15.851C24.5132 16.0493 23.4595 15.9336 22.5026 15.4061ZM22.7296 21.9311L24.4627 22.9076C20.924 24.8423 19.9621 28.4348 18.8193 31.9338C17.6767 28.4348 16.7146 24.8423 13.1761 22.9076L14.9092 21.9311C15.0768 21.8693 15.2201 21.7573 15.3185 21.6112C15.4169 21.4651 15.4654 21.2923 15.457 21.1177C15.2982 17.8407 16.2053 16.3916 17.4288 15.4817C17.8676 15.1558 18.3467 14.9921 18.8193 14.9921C19.292 14.9921 19.771 15.1558 20.21 15.4817C21.4335 16.3916 22.3406 17.8407 22.1818 21.1177C22.1734 21.2923 22.2218 21.4651 22.3202 21.6112C22.4187 21.7573 22.5619 21.8693 22.7296 21.9311ZM18.8193 0.533936C20.8226 0.586401 22.8309 0.96577 24.5738 1.70377C25.7808 2.21549 26.907 2.89142 27.9267 3.6997C28.3872 4.06459 28.7664 4.4171 29.1842 4.82291C30.3108 4.86091 31.9573 3.64 32.7217 2.49758C31.4062 6.70459 25.4031 11.6727 21.2472 13.5737C21.2455 13.573 21.2443 13.572 21.243 13.5712C20.4972 13.0157 19.6583 12.7379 18.8193 12.7379C17.9803 12.7379 17.1416 13.0157 16.3957 13.5712C16.3945 13.5719 16.3933 13.5732 16.3916 13.5737C12.2355 11.6727 6.23262 6.70459 4.91711 2.49758C5.68137 3.64 7.32785 4.86091 8.45447 4.82291C8.87234 4.41724 9.25154 4.06459 9.71192 3.6997C10.7317 2.89142 11.8579 2.21549 13.0648 1.70377C14.8079 0.96577 16.8162 0.586401 18.8193 0.533936ZM15.136 15.4061C13.8269 14.7693 12.1609 13.8319 10.4931 12.5475C10.1415 13.2599 10.103 13.8815 10.284 14.3835C10.4125 14.7373 10.6545 15.045 10.9725 15.2898C11.3172 15.5543 11.7474 15.7469 12.2231 15.851C13.1256 16.0493 14.1792 15.9336 15.136 15.4061Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M28.9723 10.9736C29.8905 10.0697 30.6995 9.06927 31.3501 8.17651L31.6805 8.78314C32.7442 10.8591 33.2969 12.9267 33.2969 15.2536L33.2946 18.9459L33.3146 20.86C33.3916 25.5591 34.4339 30.3135 36.795 34.6644L31.855 30.7786L28.3596 36.3117L24.6874 32.9395L18.8193 42.2288L12.9513 32.9397L9.27922 36.3118L5.7838 30.7787L0.843628 34.6645C3.20472 30.3136 4.24703 25.5593 4.32421 20.8602L4.34418 18.9461L4.3419 15.2537C4.3419 12.9267 4.89444 10.8591 5.95843 8.78328L6.28869 8.17665C6.93924 9.06941 7.74815 10.0697 8.66648 10.9738L8.37972 11.5548C7.82262 12.6833 7.63815 13.9451 8.07214 15.1451C8.3519 15.9181 8.8625 16.5809 9.52075 17.0869C10.1599 17.5783 10.9163 17.9096 11.7082 18.0835C12.2241 18.1968 12.7497 18.2434 13.2718 18.2275C13.15 18.9013 13.0968 19.6 13.0933 20.312L8.43337 22.9375L12.0294 24.9038C12.3168 25.061 12.5904 25.2411 12.8474 25.4422C15.8121 28.0388 17.5945 35.7204 18.8195 39.4725C20.0445 35.7204 21.8268 28.0388 24.7917 25.4422C25.0487 25.241 25.3223 25.0609 25.6097 24.9038L29.2057 22.9375L24.5456 20.312C24.5422 19.6 24.4889 18.9013 24.3671 18.2275C24.8893 18.2434 25.4148 18.1968 25.9307 18.0835C26.7226 17.9096 27.4792 17.5783 28.1182 17.0869C28.7763 16.5809 29.287 15.9181 29.5666 15.1451C30.0008 13.9451 29.8162 12.6834 29.2592 11.5548L28.9725 10.9738L28.9723 10.9736Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                class="hero__social-btn btn btn_icon"
+                href="https://app.uniswap.org/explore/tokens/base/0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9"
+                target="_blank"
+              >
+                <img
+                  src="assets/img/jupiter-ag.png"
+                  alt="Jupiter"
+                  width="52"
+                  height="52"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <img class="about__left" src="assets/img/about-left.png" />
+        <img class="about__right" src="assets/img/about-right.png" />
+        <div class="about__container container">
+          <div class="about__col">
+            <h2 class="about__title">
+              <img src="assets/img/abt.png" alt="About" />
+            </h2>
+            <p class="about__text">
+              <a style="color: #3ff4ff">Not Just a Meme!</a>
+              <br />
+              <br />
 
-                </div>
-            </section>
-            <section id="about" class="about">
-                <img class="about__left" src="assets/img/about-left.png">
-                <img class="about__right" src="assets/img/about-right.png">
-                <div class="about__container container">
-                    <div class="about__col">
-                        <h2 class="about__title">
-                            <img src="assets/img/abt.png" alt="About">
-                        </h2>
-                        <p class="about__text">
-                            <a style="color: #3ff4ff">Not Just a Meme!</a>
-                            <br>
-                            <br>
-
-                            Based Bonk is not just another meme coin. It’s a
-                            legitimate attempt to become the *Bonk of Base*—with
-                            the same explosive community energy and meme
-                            potential that made Solana’s Bonk a billion-dollar
-                            monster.
-                            <br><br>
-                            Based Bonk is the first meme coin on Base, a new
-                            layer-2 blockchain that’s already making waves with
-                            its low fees and fast transactions. It’s a
-                            community-driven project that’s all about fun,
-                            memes, and building a strong ecosystem.
-                            <br><br>
-                        </p>
-                    </div>
-                    <!-- <img
+              Kudai isn’t just another meme coin on Solana. It’s a bold attempt
+              to become the WIF of Solana's next wave—driven by raw meme energy,
+              community firepower, and the same unstoppable momentum that turned
+              Bonk into a billion-dollar beast.
+              <br /><br />
+              Kudai is one of the freshest meme tokens on Solana—a high-speed,
+              low-fee chain made for culture to thrive. Powered by its holders,
+              Kudai is more than just laughs—it’s a movement. Built by the
+              community, for the community. And the memes? Ruthless.
+              <br /><br />
+            </p>
+          </div>
+          <!-- <img
             class="about__illustration"
             src="assets/img/about-illustration.png"
             alt=""
           />-->
+        </div>
+      </section>
+      <!--AI CHAT BOT-->
+      <section id="ai-chat" class="ai-chat">
+        <div class="ai-chat__container container">
+          <div class="ai-chat__inner">
+            <div class="ai-chat__col">
+              <h2 class="ai-chat__title">
+                <img src="assets/img/aiag.png" alt="AI Assistant" />
+              </h2>
+              <div class="ai-chat__messages" id="chat-messages">
+                <div class="ai-chat__message ai-chat__message--bot">
+                  <div class="ai-chat__message-content">
+                    <p>
+                      Hello! I'm KUDAI, your friendly AI assistant. How can I
+                      help you today?
+                    </p>
+                  </div>
                 </div>
-            </section>
-            <!--AI CHAT BOT-->
-            <section id="ai-chat" class="ai-chat">
-                <div class="ai-chat__container container">
-                    <div class="ai-chat__inner">
-                        <div class="ai-chat__col">
-                            <h2 class="ai-chat__title">
-                                <img src="assets/img/aiag.png" alt="AI Assistant">
-                            </h2>
-                            <div class="ai-chat__messages" id="chat-messages">
-                                <div class="ai-chat__message ai-chat__message--bot">
-                                    <div class="ai-chat__message-content">
-                                        <p>Hello! I'm KUDAI, your friendly AI assistant. How can I help you today?</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ai-chat__input-container">
-                                <input type="text" id="chat-input" class="ai-chat__input" placeholder="Type your message here..." />
-                                <button id="chat-send" class="ai-chat__send-btn btn">Send</button>
-                            </div>
-                        </div>
-                        <div class="ai-chat__illustration">
-                            <img src="assets/img/IMG_8415.PNG" alt="AI Assistant Illustration">
-                        </div>
-                    </div>
+              </div>
+              <div class="ai-chat__input-container">
+                <input
+                  type="text"
+                  id="chat-input"
+                  class="ai-chat__input"
+                  placeholder="Type your message here..."
+                />
+                <button id="chat-send" class="ai-chat__send-btn btn">
+                  Send
+                </button>
+              </div>
+            </div>
+            <div class="ai-chat__illustration">
+              <img
+                src="assets/img/IMG_8415.PNG"
+                alt="AI Assistant Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tokenomics" class="tokenomics">
+        <img class="tokenomics__left" src="assets/img/tokenomics-left.png" />
+        <div class="tokenomics__container container">
+          <div class="tokenomics__inner">
+            <div class="tokenomics__col">
+              <h2 class="tokenomics__title">
+                <img src="assets/img/tkn.png" alt="Tokenomics" />
+              </h2>
+              <div class="tokenomics__row">
+                <div class="tokenomics__item">
+                  <span>Supply</span>
+                  <strong>1,000,000,000</strong>
                 </div>
-            </section>
-            <section id="tokenomics" class="tokenomics">
-                <img class="tokenomics__left" src="assets/img/tokenomics-left.png">
-                <div class="tokenomics__container container">
-                    <div class="tokenomics__inner">
-                        <div class="tokenomics__col">
-                            <h2 class="tokenomics__title">
-                                <img src="assets/img/tkn.png" alt="Tokenomics">
-                            </h2>
-                            <div class="tokenomics__row">
-                                <div class="tokenomics__item">
-                                    <span>Supply</span>
-                                    <strong>1,000,000,000</strong>
-                                </div>
-                                <div class="tokenomics__item">
-                                    <span>Taxes</span>
-                                    <strong>0%</strong>
-                                </div>
-                                <div class="tokenomics__item">
-                                    <span>Liquidity</span>
-                                    <strong>Burnt</strong>
-                                </div>
-                            </div>
-                            <div class="tokenomics__contract contract">
-                                <p class="contract__contract">
-                                    0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9
-                                </p>
-                                <button class="contract__btn btn">Copy</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tokenomics__item">
+                  <span>Taxes</span>
+                  <strong>0%</strong>
                 </div>
-            </section>
-            <!--EXCHANGES-->
-            <!-- <section id="how-to-buy" class="cex">
+                <div class="tokenomics__item">
+                  <span>Liquidity</span>
+                  <strong>Burnt</strong>
+                </div>
+              </div>
+              <div class="tokenomics__contract contract">
+                <p class="contract__contract">
+                  0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9
+                </p>
+                <button class="contract__btn btn">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--EXCHANGES-->
+      <!-- <section id="how-to-buy" class="cex">
                 <div class="cex__container container">
                     <h2 class="cex__title">CEX Listings</h2>
                     <div class="cex__items">
@@ -282,198 +391,266 @@
                     </div>
                 </div>
             </section> -->
-            <!--END EXCHANGES-->
+      <!--END EXCHANGES-->
 
-            <section id="how-to-buy" class="buy">
-                <!-- <img class="buy__left" src="assets/img/buy-left.png" alt="" />
+      <section id="how-to-buy" class="buy">
+        <!-- <img class="buy__left" src="assets/img/buy-left.png" alt="" />
                 <img class="buy__right" src="assets/img/buy-right.png" alt="" />-->
-                <div class="buy__container container">
-                                      <h2 class="buy__title">
-                        <img src="assets/img/htb.png" alt="How to buy">
-                    </h2>
-                  <div class="buy__items">
-                    <div class="buy__item">
-                      <div class="buy__number">1</div>
-                      <p class="buy__text">
-                        Download the Phantom or Backpack wallet from their official
-                        websites or browser extension stores. Set it up and fund it with
-                        SOL by transferring from a CEX (like Binance, Coinbase) or using
-                        an on-ramp (e.g., MoonPay, Transak).
-                      </p>
-                    </div>
-                    <div class="buy__item">
-                      <div class="buy__number">2</div>
-                      <p class="buy__text">
-                        Visit
-                        <a href="https://jup.ag/">Jupiter</a>
-                        and click “Connect Wallet” in the top-right corner. Choose your
-                        wallet (Phantom/Backpack) and approve the connection.
-                      </p>
-                    </div>
-                    <div class="buy__item">
-                      <div class="buy__number">3</div>
-                      <p class="buy__text">
-                        In the "From" field, select SOL (or any other token you have).
-                        In the "To" field, paste the $KUDAI contract address (or search
-                        $KUDAI if already listed). Enter the amount to swap and click
-                        “Swap”, then approve the transaction in your wallet. Make sure
-                        you're on the Solana mainnet and have enough SOL for gas fees.
-                      </p>
-                    </div>
-                    <div class="buy__item">
-                      <div class="buy__number">4</div>
-                      <p class="buy__text">
-                        After the swap: Check your wallet’s activity tab to verify the
-                        transaction. If $KUDAI doesn't appear in your wallet, manually
-                        import it using the token address.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            <footer class="footer">
-                <div class="footer__container container">
-                    <a class="footer__logo" href="index.html">
-                        <img src="assets/img/Frame 91.png">
-                    </a>
-                    <p class="footer__disclaimer">
-                        Disclaimer<br>
-                        $<span class="buy__text">KUDAI</span> isn't just a meme, it's a piece of art. <br>
-                        <br>
-                    </p>
-                    <div class="footer__socials">
-                        <a class="footer__social-btn btn btn_icon" href="https://t.me/BasedB0nk" target="_blank">
-                            <svg width="43" height="43" viewbox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M36.603 6.80442C36.603 6.80442 40.0026 5.4788 39.7193 8.69818C39.6249 10.0238 38.775 14.6635 38.1139 19.682L35.8475 34.548C35.8475 34.548 35.6587 36.7258 33.9588 37.1045C32.259 37.4832 29.7093 35.7789 29.2371 35.4001C28.8593 35.1161 22.1546 30.8551 19.7936 28.772C19.1326 28.2039 18.3771 27.0676 19.8881 25.742L29.8037 16.2732C30.9369 15.137 32.0701 12.4857 27.3484 15.7051L14.1276 24.7005C14.1276 24.7005 12.6166 25.6473 9.78364 24.7951L3.64536 22.9014C3.64536 22.9014 1.37892 21.4811 5.25075 20.0607C14.6942 15.6103 26.3097 11.0653 36.603 6.80442Z" fill="currentColor"></path>
-                            </svg>
-                        </a>
-                        <a class="footer__social-btn btn btn_icon" href="https://x.com/BasedBonk_?t=VBQtrr4MYMBcEgcrclY-SQ&s=09_" target="_blank">
-                            <svg width="39" height="39" viewbox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27.9541 5.34119H32.5933L22.4073 17.8633L34.3078 34.8498H24.9689L17.6572 24.5272L9.28649 34.8498H4.64732L15.4384 21.4566L4.04221 5.34119H13.613L20.2188 14.7709L27.9541 5.34119ZM26.3304 31.9098H28.9021L12.2616 8.17227H9.49828L26.3304 31.9098Z" fill="currentColor"></path>
-                            </svg>
-                        </a>
-                        <a class="footer__social-btn btn btn_icon" href="https://www.dextools.io/app/en/base/pair-explorer/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7?t=1753282595603" target="_blank">
-                            <svg width="34" height="38" viewbox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.678 2.97126C10.3766 4.12163 8.49377 5.09507 8.49417 5.13466C8.49519 5.23685 14.0176 7.92051 14.2136 7.91397C14.3028 7.91111 14.9496 7.62541 15.6509 7.27916L16.9262 6.64974L18.319 7.33671L19.7118 8.02381L21.9926 7.04037C25.4294 5.55847 25.7864 5.39608 25.7304 5.34152C25.6562 5.26913 24.4235 4.63368 21.0791 2.94415C19.4627 2.12759 17.894 1.32697 17.5928 1.16496C17.2917 1.00296 17.0042 0.872635 16.9539 0.875158C16.9037 0.877681 14.9795 1.82094 12.678 2.97126ZM2.58408 7.98687L0.188343 9.17431V14.3857C0.188343 17.2521 0.219802 19.5971 0.258389 19.5971C0.296844 19.5971 1.47555 19.1069 2.87768 18.5076L5.42702 17.4181V11.9249L6.67279 12.5762C7.63276 13.0776 8.59331 13.5779 9.55444 14.0773L11.1903 14.9272L11.9182 14.6113C12.3747 14.4129 12.8303 14.2126 13.285 14.0103C13.6363 13.8533 14.4988 13.4806 15.2015 13.1818C15.9043 12.883 16.5548 12.5824 16.647 12.5139C16.7696 12.423 15.2754 11.6307 11.1206 9.58341C7.98883 8.04019 5.32596 6.78246 5.20315 6.78849C5.08035 6.79452 3.90177 7.33372 2.58408 7.98687ZM26.1622 8.32033C24.5306 9.02714 23.1944 9.63369 23.1929 9.66828C23.1915 9.70282 24.0808 10.2102 25.1693 10.7956C26.2577 11.3812 27.1482 11.8916 27.1482 11.93C27.1482 11.9684 26.1851 12.4162 25.0081 12.9253C23.8309 13.4343 20.8555 14.7237 18.3959 15.7906L10.1546 19.3651C8.08147 20.2644 6.21281 21.0749 6.002 21.1666C1.76759 23.0059 0.603719 23.5163 0.443887 23.6039C0.283164 23.6921 0.24676 24.2046 0.218153 26.7765L0.184021 29.844L2.3264 30.8915L4.46874 31.9389L7.43942 30.6524C9.07334 29.9449 10.4101 29.329 10.4101 29.2836C10.4101 29.2384 10.1082 29.0496 9.73932 28.864C9.37028 28.6783 8.60851 28.2673 8.04631 27.9505C7.48416 27.6336 6.92361 27.3429 6.80054 27.3044C6.67751 27.2659 6.57864 27.1987 6.58064 27.1548C6.58269 27.1111 7.89084 26.5148 9.48747 25.8297C12.5886 24.4993 14.9619 23.4738 20.0569 21.2629C22.3352 20.2745 24.6138 19.2867 26.8927 18.2995C28.8955 17.432 31.2241 16.4189 32.0674 16.0481L33.6007 15.374L33.6348 12.2715L33.6691 9.16918L31.4962 8.09898C30.301 7.51043 29.2795 7.03032 29.2259 7.03207C29.1724 7.0337 27.7937 7.61335 26.1622 8.32033ZM33.0185 19.5128C32.6983 19.6629 32.0659 19.9439 31.6131 20.1372C31.1603 20.3305 30.301 20.7025 29.7037 20.9641L28.6176 21.4394L28.5928 24.1631C28.5791 25.6611 28.5216 26.8801 28.4651 26.8721C28.3365 26.8538 26.301 25.8521 24.2548 24.8C22.778 24.0408 22.6853 24.0106 22.3382 24.1755C22.1376 24.2709 20.9385 24.7869 19.6736 25.3225C18.4086 25.8579 17.3324 26.331 17.2818 26.3738C17.2313 26.4166 19.7772 27.7406 22.9394 29.3163L28.6888 32.1811L31.1448 30.962C32.4955 30.2916 33.644 29.68 33.6969 29.6031C33.816 29.4301 33.8058 19.2162 33.6866 19.23C33.6394 19.2355 33.3387 19.3627 33.0185 19.5128ZM19.418 31.5014C18.992 31.6772 18.5661 31.8532 18.1403 32.0294C16.8545 32.5632 17.1065 32.5809 15.5768 31.8502C14.558 31.3635 14.1188 31.2134 13.9282 31.2863C13.7852 31.3409 12.5546 31.8721 11.1934 32.4668C9.83218 33.0614 8.67124 33.5479 8.6135 33.5479C8.04239 33.5479 8.99184 34.0922 12.6556 35.8656L16.9523 37.9451L18.7601 37.0887C19.7545 36.6177 21.76 35.6744 23.2169 34.9926C24.6738 34.3106 25.8478 33.735 25.8258 33.7133C25.8037 33.6917 24.5829 33.0902 23.1129 32.3766L20.4402 31.0795L19.418 31.5014Z" fill="currentColor"></path>
-                                </g>
-                            </svg>
-                        </a>
-                        <a class="footer__social-btn btn btn_icon" href="https://dexscreener.com/base/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7" target="_blank">
-                            <svg width="37" height="43" viewbox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5026 15.4061C23.8119 14.7693 25.4777 13.8319 27.1456 12.5475C27.4973 13.2599 27.5358 13.8815 27.3546 14.3835C27.2262 14.7373 26.9843 15.045 26.6661 15.2898C26.3216 15.5543 25.8913 15.7469 25.4157 15.851C24.5132 16.0493 23.4595 15.9336 22.5026 15.4061ZM22.7296 21.9311L24.4627 22.9076C20.924 24.8423 19.9621 28.4348 18.8193 31.9338C17.6767 28.4348 16.7146 24.8423 13.1761 22.9076L14.9092 21.9311C15.0768 21.8693 15.2201 21.7573 15.3185 21.6112C15.4169 21.4651 15.4654 21.2923 15.457 21.1177C15.2982 17.8407 16.2053 16.3916 17.4288 15.4817C17.8676 15.1558 18.3467 14.9921 18.8193 14.9921C19.292 14.9921 19.771 15.1558 20.21 15.4817C21.4335 16.3916 22.3406 17.8407 22.1818 21.1177C22.1734 21.2923 22.2218 21.4651 22.3202 21.6112C22.4187 21.7573 22.5619 21.8693 22.7296 21.9311ZM18.8193 0.533936C20.8226 0.586401 22.8309 0.96577 24.5738 1.70377C25.7808 2.21549 26.907 2.89142 27.9267 3.6997C28.3872 4.06459 28.7664 4.4171 29.1842 4.82291C30.3108 4.86091 31.9573 3.64 32.7217 2.49758C31.4062 6.70459 25.4031 11.6727 21.2472 13.5737C21.2455 13.573 21.2443 13.572 21.243 13.5712C20.4972 13.0157 19.6583 12.7379 18.8193 12.7379C17.9803 12.7379 17.1416 13.0157 16.3957 13.5712C16.3945 13.5719 16.3933 13.5732 16.3916 13.5737C12.2355 11.6727 6.23262 6.70459 4.91711 2.49758C5.68137 3.64 7.32785 4.86091 8.45447 4.82291C8.87234 4.41724 9.25154 4.06459 9.71192 3.6997C10.7317 2.89142 11.8579 2.21549 13.0648 1.70377C14.8079 0.96577 16.8162 0.586401 18.8193 0.533936ZM15.136 15.4061C13.8269 14.7693 12.1609 13.8319 10.4931 12.5475C10.1415 13.2599 10.103 13.8815 10.284 14.3835C10.4125 14.7373 10.6545 15.045 10.9725 15.2898C11.3172 15.5543 11.7474 15.7469 12.2231 15.851C13.1256 16.0493 14.1792 15.9336 15.136 15.4061Z" fill="currentColor"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.9723 10.9736C29.8905 10.0697 30.6995 9.06927 31.3501 8.17651L31.6805 8.78314C32.7442 10.8591 33.2969 12.9267 33.2969 15.2536L33.2946 18.9459L33.3146 20.86C33.3916 25.5591 34.4339 30.3135 36.795 34.6644L31.855 30.7786L28.3596 36.3117L24.6874 32.9395L18.8193 42.2288L12.9513 32.9397L9.27922 36.3118L5.7838 30.7787L0.843628 34.6645C3.20472 30.3136 4.24703 25.5593 4.32421 20.8602L4.34418 18.9461L4.3419 15.2537C4.3419 12.9267 4.89444 10.8591 5.95843 8.78328L6.28869 8.17665C6.93924 9.06941 7.74815 10.0697 8.66648 10.9738L8.37972 11.5548C7.82262 12.6833 7.63815 13.9451 8.07214 15.1451C8.3519 15.9181 8.8625 16.5809 9.52075 17.0869C10.1599 17.5783 10.9163 17.9096 11.7082 18.0835C12.2241 18.1968 12.7497 18.2434 13.2718 18.2275C13.15 18.9013 13.0968 19.6 13.0933 20.312L8.43337 22.9375L12.0294 24.9038C12.3168 25.061 12.5904 25.2411 12.8474 25.4422C15.8121 28.0388 17.5945 35.7204 18.8195 39.4725C20.0445 35.7204 21.8268 28.0388 24.7917 25.4422C25.0487 25.241 25.3223 25.0609 25.6097 24.9038L29.2057 22.9375L24.5456 20.312C24.5422 19.6 24.4889 18.9013 24.3671 18.2275C24.8893 18.2434 25.4148 18.1968 25.9307 18.0835C26.7226 17.9096 27.4792 17.5783 28.1182 17.0869C28.7763 16.5809 29.287 15.9181 29.5666 15.1451C30.0008 13.9451 29.8162 12.6834 29.2592 11.5548L28.9725 10.9738L28.9723 10.9736Z" fill="currentColor"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                    <a class="footer__btn btn" href="https://app.uniswap.org/explore/tokens/base/0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9" target="_blank">Buy $kudai</a>
-                </div>
-            </footer>
+        <div class="buy__container container">
+          <h2 class="buy__title">
+            <img src="assets/img/htb.png" alt="How to buy" />
+          </h2>
+          <div class="buy__items">
+            <div class="buy__item">
+              <div class="buy__number">1</div>
+              <p class="buy__text">
+                Download the Phantom or Backpack wallet from their official
+                websites or browser extension stores. Set it up and fund it with
+                SOL by transferring from a CEX (like Binance, Coinbase) or using
+                an on-ramp (e.g., MoonPay, Transak).
+              </p>
+            </div>
+            <div class="buy__item">
+              <div class="buy__number">2</div>
+              <p class="buy__text">
+                Visit
+                <a href="https://jup.ag/">Jupiter</a>
+                and click “Connect Wallet” in the top-right corner. Choose your
+                wallet (Phantom/Backpack) and approve the connection.
+              </p>
+            </div>
+            <div class="buy__item">
+              <div class="buy__number">3</div>
+              <p class="buy__text">
+                In the "From" field, select SOL (or any other token you have).
+                In the "To" field, paste the $KUDAI contract address (or search
+                $KUDAI if already listed). Enter the amount to swap and click
+                “Swap”, then approve the transaction in your wallet. Make sure
+                you're on the Solana mainnet and have enough SOL for gas fees.
+              </p>
+            </div>
+            <div class="buy__item">
+              <div class="buy__number">4</div>
+              <p class="buy__text">
+                After the swap: Check your wallet’s activity tab to verify the
+                transaction. If $KUDAI doesn't appear in your wallet, manually
+                import it using the token address.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container container">
+          <a class="footer__logo" href="index.html">
+            <img src="assets/img/Frame 91.png" />
+          </a>
+          <p class="footer__disclaimer">
+            Disclaimer<br />
+            $<span class="buy__text">KUDAI</span> isn't just a meme, it's a
+            piece of art. <br />
+            <br />
+          </p>
+          <div class="footer__socials">
+            <a
+              class="footer__social-btn btn btn_icon"
+              href="https://t.me/BasedB0nk"
+              target="_blank"
+            >
+              <svg
+                width="43"
+                height="43"
+                viewbox="0 0 43 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.603 6.80442C36.603 6.80442 40.0026 5.4788 39.7193 8.69818C39.6249 10.0238 38.775 14.6635 38.1139 19.682L35.8475 34.548C35.8475 34.548 35.6587 36.7258 33.9588 37.1045C32.259 37.4832 29.7093 35.7789 29.2371 35.4001C28.8593 35.1161 22.1546 30.8551 19.7936 28.772C19.1326 28.2039 18.3771 27.0676 19.8881 25.742L29.8037 16.2732C30.9369 15.137 32.0701 12.4857 27.3484 15.7051L14.1276 24.7005C14.1276 24.7005 12.6166 25.6473 9.78364 24.7951L3.64536 22.9014C3.64536 22.9014 1.37892 21.4811 5.25075 20.0607C14.6942 15.6103 26.3097 11.0653 36.603 6.80442Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer__social-btn btn btn_icon"
+              href="https://x.com/BasedBonk_?t=VBQtrr4MYMBcEgcrclY-SQ&s=09_"
+              target="_blank"
+            >
+              <svg
+                width="39"
+                height="39"
+                viewbox="0 0 39 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.9541 5.34119H32.5933L22.4073 17.8633L34.3078 34.8498H24.9689L17.6572 24.5272L9.28649 34.8498H4.64732L15.4384 21.4566L4.04221 5.34119H13.613L20.2188 14.7709L27.9541 5.34119ZM26.3304 31.9098H28.9021L12.2616 8.17227H9.49828L26.3304 31.9098Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="footer__social-btn btn btn_icon"
+              href="https://www.dextools.io/app/en/base/pair-explorer/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7?t=1753282595603"
+              target="_blank"
+            >
+              <svg
+                width="34"
+                height="38"
+                viewbox="0 0 34 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.678 2.97126C10.3766 4.12163 8.49377 5.09507 8.49417 5.13466C8.49519 5.23685 14.0176 7.92051 14.2136 7.91397C14.3028 7.91111 14.9496 7.62541 15.6509 7.27916L16.9262 6.64974L18.319 7.33671L19.7118 8.02381L21.9926 7.04037C25.4294 5.55847 25.7864 5.39608 25.7304 5.34152C25.6562 5.26913 24.4235 4.63368 21.0791 2.94415C19.4627 2.12759 17.894 1.32697 17.5928 1.16496C17.2917 1.00296 17.0042 0.872635 16.9539 0.875158C16.9037 0.877681 14.9795 1.82094 12.678 2.97126ZM2.58408 7.98687L0.188343 9.17431V14.3857C0.188343 17.2521 0.219802 19.5971 0.258389 19.5971C0.296844 19.5971 1.47555 19.1069 2.87768 18.5076L5.42702 17.4181V11.9249L6.67279 12.5762C7.63276 13.0776 8.59331 13.5779 9.55444 14.0773L11.1903 14.9272L11.9182 14.6113C12.3747 14.4129 12.8303 14.2126 13.285 14.0103C13.6363 13.8533 14.4988 13.4806 15.2015 13.1818C15.9043 12.883 16.5548 12.5824 16.647 12.5139C16.7696 12.423 15.2754 11.6307 11.1206 9.58341C7.98883 8.04019 5.32596 6.78246 5.20315 6.78849C5.08035 6.79452 3.90177 7.33372 2.58408 7.98687ZM26.1622 8.32033C24.5306 9.02714 23.1944 9.63369 23.1929 9.66828C23.1915 9.70282 24.0808 10.2102 25.1693 10.7956C26.2577 11.3812 27.1482 11.8916 27.1482 11.93C27.1482 11.9684 26.1851 12.4162 25.0081 12.9253C23.8309 13.4343 20.8555 14.7237 18.3959 15.7906L10.1546 19.3651C8.08147 20.2644 6.21281 21.0749 6.002 21.1666C1.76759 23.0059 0.603719 23.5163 0.443887 23.6039C0.283164 23.6921 0.24676 24.2046 0.218153 26.7765L0.184021 29.844L2.3264 30.8915L4.46874 31.9389L7.43942 30.6524C9.07334 29.9449 10.4101 29.329 10.4101 29.2836C10.4101 29.2384 10.1082 29.0496 9.73932 28.864C9.37028 28.6783 8.60851 28.2673 8.04631 27.9505C7.48416 27.6336 6.92361 27.3429 6.80054 27.3044C6.67751 27.2659 6.57864 27.1987 6.58064 27.1548C6.58269 27.1111 7.89084 26.5148 9.48747 25.8297C12.5886 24.4993 14.9619 23.4738 20.0569 21.2629C22.3352 20.2745 24.6138 19.2867 26.8927 18.2995C28.8955 17.432 31.2241 16.4189 32.0674 16.0481L33.6007 15.374L33.6348 12.2715L33.6691 9.16918L31.4962 8.09898C30.301 7.51043 29.2795 7.03032 29.2259 7.03207C29.1724 7.0337 27.7937 7.61335 26.1622 8.32033ZM33.0185 19.5128C32.6983 19.6629 32.0659 19.9439 31.6131 20.1372C31.1603 20.3305 30.301 20.7025 29.7037 20.9641L28.6176 21.4394L28.5928 24.1631C28.5791 25.6611 28.5216 26.8801 28.4651 26.8721C28.3365 26.8538 26.301 25.8521 24.2548 24.8C22.778 24.0408 22.6853 24.0106 22.3382 24.1755C22.1376 24.2709 20.9385 24.7869 19.6736 25.3225C18.4086 25.8579 17.3324 26.331 17.2818 26.3738C17.2313 26.4166 19.7772 27.7406 22.9394 29.3163L28.6888 32.1811L31.1448 30.962C32.4955 30.2916 33.644 29.68 33.6969 29.6031C33.816 29.4301 33.8058 19.2162 33.6866 19.23C33.6394 19.2355 33.3387 19.3627 33.0185 19.5128ZM19.418 31.5014C18.992 31.6772 18.5661 31.8532 18.1403 32.0294C16.8545 32.5632 17.1065 32.5809 15.5768 31.8502C14.558 31.3635 14.1188 31.2134 13.9282 31.2863C13.7852 31.3409 12.5546 31.8721 11.1934 32.4668C9.83218 33.0614 8.67124 33.5479 8.6135 33.5479C8.04239 33.5479 8.99184 34.0922 12.6556 35.8656L16.9523 37.9451L18.7601 37.0887C19.7545 36.6177 21.76 35.6744 23.2169 34.9926C24.6738 34.3106 25.8478 33.735 25.8258 33.7133C25.8037 33.6917 24.5829 33.0902 23.1129 32.3766L20.4402 31.0795L19.418 31.5014Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <a
+              class="footer__social-btn btn btn_icon"
+              href="https://dexscreener.com/base/0x5c934383f3e7b5e13fb5e4832ca049334b526cf7"
+              target="_blank"
+            >
+              <svg
+                width="37"
+                height="43"
+                viewbox="0 0 37 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.5026 15.4061C23.8119 14.7693 25.4777 13.8319 27.1456 12.5475C27.4973 13.2599 27.5358 13.8815 27.3546 14.3835C27.2262 14.7373 26.9843 15.045 26.6661 15.2898C26.3216 15.5543 25.8913 15.7469 25.4157 15.851C24.5132 16.0493 23.4595 15.9336 22.5026 15.4061ZM22.7296 21.9311L24.4627 22.9076C20.924 24.8423 19.9621 28.4348 18.8193 31.9338C17.6767 28.4348 16.7146 24.8423 13.1761 22.9076L14.9092 21.9311C15.0768 21.8693 15.2201 21.7573 15.3185 21.6112C15.4169 21.4651 15.4654 21.2923 15.457 21.1177C15.2982 17.8407 16.2053 16.3916 17.4288 15.4817C17.8676 15.1558 18.3467 14.9921 18.8193 14.9921C19.292 14.9921 19.771 15.1558 20.21 15.4817C21.4335 16.3916 22.3406 17.8407 22.1818 21.1177C22.1734 21.2923 22.2218 21.4651 22.3202 21.6112C22.4187 21.7573 22.5619 21.8693 22.7296 21.9311ZM18.8193 0.533936C20.8226 0.586401 22.8309 0.96577 24.5738 1.70377C25.7808 2.21549 26.907 2.89142 27.9267 3.6997C28.3872 4.06459 28.7664 4.4171 29.1842 4.82291C30.3108 4.86091 31.9573 3.64 32.7217 2.49758C31.4062 6.70459 25.4031 11.6727 21.2472 13.5737C21.2455 13.573 21.2443 13.572 21.243 13.5712C20.4972 13.0157 19.6583 12.7379 18.8193 12.7379C17.9803 12.7379 17.1416 13.0157 16.3957 13.5712C16.3945 13.5719 16.3933 13.5732 16.3916 13.5737C12.2355 11.6727 6.23262 6.70459 4.91711 2.49758C5.68137 3.64 7.32785 4.86091 8.45447 4.82291C8.87234 4.41724 9.25154 4.06459 9.71192 3.6997C10.7317 2.89142 11.8579 2.21549 13.0648 1.70377C14.8079 0.96577 16.8162 0.586401 18.8193 0.533936ZM15.136 15.4061C13.8269 14.7693 12.1609 13.8319 10.4931 12.5475C10.1415 13.2599 10.103 13.8815 10.284 14.3835C10.4125 14.7373 10.6545 15.045 10.9725 15.2898C11.3172 15.5543 11.7474 15.7469 12.2231 15.851C13.1256 16.0493 14.1792 15.9336 15.136 15.4061Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M28.9723 10.9736C29.8905 10.0697 30.6995 9.06927 31.3501 8.17651L31.6805 8.78314C32.7442 10.8591 33.2969 12.9267 33.2969 15.2536L33.2946 18.9459L33.3146 20.86C33.3916 25.5591 34.4339 30.3135 36.795 34.6644L31.855 30.7786L28.3596 36.3117L24.6874 32.9395L18.8193 42.2288L12.9513 32.9397L9.27922 36.3118L5.7838 30.7787L0.843628 34.6645C3.20472 30.3136 4.24703 25.5593 4.32421 20.8602L4.34418 18.9461L4.3419 15.2537C4.3419 12.9267 4.89444 10.8591 5.95843 8.78328L6.28869 8.17665C6.93924 9.06941 7.74815 10.0697 8.66648 10.9738L8.37972 11.5548C7.82262 12.6833 7.63815 13.9451 8.07214 15.1451C8.3519 15.9181 8.8625 16.5809 9.52075 17.0869C10.1599 17.5783 10.9163 17.9096 11.7082 18.0835C12.2241 18.1968 12.7497 18.2434 13.2718 18.2275C13.15 18.9013 13.0968 19.6 13.0933 20.312L8.43337 22.9375L12.0294 24.9038C12.3168 25.061 12.5904 25.2411 12.8474 25.4422C15.8121 28.0388 17.5945 35.7204 18.8195 39.4725C20.0445 35.7204 21.8268 28.0388 24.7917 25.4422C25.0487 25.241 25.3223 25.0609 25.6097 24.9038L29.2057 22.9375L24.5456 20.312C24.5422 19.6 24.4889 18.9013 24.3671 18.2275C24.8893 18.2434 25.4148 18.1968 25.9307 18.0835C26.7226 17.9096 27.4792 17.5783 28.1182 17.0869C28.7763 16.5809 29.287 15.9181 29.5666 15.1451C30.0008 13.9451 29.8162 12.6834 29.2592 11.5548L28.9725 10.9738L28.9723 10.9736Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <a
+            class="footer__btn btn"
+            href="https://app.uniswap.org/explore/tokens/base/0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9"
+            target="_blank"
+            >Buy $kudai</a
+          >
+        </div>
+      </footer>
+    </div>
 
-        <script type="text/javascript">
-            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-                const hash = new URL(anchor.href).hash;
-                if (!hash || hash === "#") return;
-                const element = document.querySelector(hash);
-                if (!element) return;
+    <script type="text/javascript">
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        const hash = new URL(anchor.href).hash;
+        if (!hash || hash === "#") return;
+        const element = document.querySelector(hash);
+        if (!element) return;
 
-                anchor.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    element.scrollIntoView({ behavior: "smooth" });
-                });
-            });
-            document
-                .querySelector(".header__burger")
-                .addEventListener("click", () => {
-                    document
-                        .querySelector(".header")
-                        .classList.toggle("header_open");
-                });
-            document
-                .querySelector(".contract__btn")
-                .addEventListener("click", () => {
-                    window.navigator.clipboard.writeText(
-                        document.querySelector(".contract__contract")
-                            .textContent
-                    );
-                });
+        anchor.addEventListener("click", (e) => {
+          e.preventDefault();
+          element.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+      document
+        .querySelector(".header__burger")
+        .addEventListener("click", () => {
+          document.querySelector(".header").classList.toggle("header_open");
+        });
+      document.querySelector(".contract__btn").addEventListener("click", () => {
+        window.navigator.clipboard.writeText(
+          document.querySelector(".contract__contract").textContent
+        );
+      });
 
-            // AI Chat Bot JavaScript
-            const chatMessages = document.getElementById('chat-messages');
-            const chatInput = document.getElementById('chat-input');
-            const chatSend = document.getElementById('chat-send');
-            let messages = [];
+      // AI Chat Bot JavaScript
+      const chatMessages = document.getElementById("chat-messages");
+      const chatInput = document.getElementById("chat-input");
+      const chatSend = document.getElementById("chat-send");
+      let messages = [];
 
-            function addMessage(content, isUser = false) {
-                const messageDiv = document.createElement('div');
-                messageDiv.className = `ai-chat__message ai-chat__message--${isUser ? 'user' : 'bot'}`;
-                
-                const messageContent = document.createElement('div');
-                messageContent.className = 'ai-chat__message-content';
-                
-                const messageText = document.createElement('p');
-                messageText.textContent = content;
-                
-                messageContent.appendChild(messageText);
-                messageDiv.appendChild(messageContent);
-                chatMessages.appendChild(messageDiv);
-                
-                // Scroll to bottom
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            }
+      function addMessage(content, isUser = false) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className = `ai-chat__message ai-chat__message--${
+          isUser ? "user" : "bot"
+        }`;
 
-            async function sendMessage() {
-                const message = chatInput.value.trim();
-                if (!message) return;
+        const messageContent = document.createElement("div");
+        messageContent.className = "ai-chat__message-content";
 
-                // Add user message
-                addMessage(message, true);
-                messages.push({ message, isUser: true });
-                chatInput.value = '';
+        const messageText = document.createElement("p");
+        messageText.textContent = content;
 
-                // Show loading
-                const loadingDiv = document.createElement('div');
-                loadingDiv.className = 'ai-chat__message ai-chat__message--bot';
-                loadingDiv.innerHTML = '<div class="ai-chat__message-content"><p>Thinking...</p></div>';
-                chatMessages.appendChild(loadingDiv);
-                chatMessages.scrollTop = chatMessages.scrollHeight;
+        messageContent.appendChild(messageText);
+        messageDiv.appendChild(messageContent);
+        chatMessages.appendChild(messageDiv);
 
-                try {
-                    const response = await fetch('/api/chat', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({ messages }),
-                    });
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
 
-                    const data = await response.json();
-                    
-                    // Remove loading message
-                    chatMessages.removeChild(loadingDiv);
-                    
-                    // Add bot response
-                    addMessage(data.reply, false);
-                    messages.push({ message: data.reply, isUser: false });
-                } catch (error) {
-                    // Remove loading message
-                    chatMessages.removeChild(loadingDiv);
-                    
-                    // Add error message
-                    addMessage("Sorry, I'm having trouble connecting right now. Please try again later!", false);
-                }
-            }
+      async function sendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) return;
 
-            // Event listeners
-            chatSend.addEventListener('click', sendMessage);
-            chatInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    sendMessage();
-                }
-            });
-        </script>
-    </body>
+        // Add user message
+        addMessage(message, true);
+        messages.push({ message, isUser: true });
+        chatInput.value = "";
+
+        // Show loading
+        const loadingDiv = document.createElement("div");
+        loadingDiv.className = "ai-chat__message ai-chat__message--bot";
+        loadingDiv.innerHTML =
+          '<div class="ai-chat__message-content"><p>Thinking...</p></div>';
+        chatMessages.appendChild(loadingDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        try {
+          const response = await fetch("/api/chat", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ messages }),
+          });
+
+          const data = await response.json();
+
+          // Remove loading message
+          chatMessages.removeChild(loadingDiv);
+
+          // Add bot response
+          addMessage(data.reply, false);
+          messages.push({ message: data.reply, isUser: false });
+        } catch (error) {
+          // Remove loading message
+          chatMessages.removeChild(loadingDiv);
+
+          // Add error message
+          addMessage(
+            "Sorry, I'm having trouble connecting right now. Please try again later!",
+            false
+          );
+        }
+      }
+
+      // Event listeners
+      chatSend.addEventListener("click", sendMessage);
+      chatInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          sendMessage();
+        }
+      });
+    </script>
+  </body>
 </html>
