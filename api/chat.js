@@ -1,4 +1,14 @@
 module.exports = async (req, res) => {
+  // Добавляем CORS заголовки для Vercel
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Обрабатываем preflight запросы
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -6,6 +16,14 @@ module.exports = async (req, res) => {
   const { messages } = req.body;
   console.log('Received messages:', messages);
   console.log('API Key exists:', !!process.env.OPENAI_API_KEY);
+
+  // Проверяем наличие API ключа
+  if (!process.env.OPENAI_API_KEY) {
+    console.error('OpenAI API key is missing');
+    return res.status(200).json({ 
+      reply: "Hello! I'm KUD, your friendly AI assistant. The AI service is currently being configured. Please try again later!" 
+    });
+  }
 
   try {
     const requestBody = {
