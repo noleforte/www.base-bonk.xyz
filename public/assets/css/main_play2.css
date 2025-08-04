@@ -1179,6 +1179,34 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   pointer-events: none;
   z-index: 3;
   border-radius: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #101228;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contract__slider::before {
+  content: "← PULL TO REVEAL →";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
 }
 
 .contract__content {
