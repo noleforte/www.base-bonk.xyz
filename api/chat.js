@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
     const requestBody = {
       model: 'gpt-3.5-turbo',
       messages: [
-        { role: 'system', content: 'You are KUDAI, a friendly and helpful assistant.' },
+        { role: 'system', content: 'You are KUD, a friendly and helpful assistant.' },
         ...(messages || []).map(msg => ({
           role: msg.isUser ? 'user' : 'assistant',
           content: msg.message

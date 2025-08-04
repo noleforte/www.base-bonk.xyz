@@ -232,7 +232,7 @@
                 <div class="ai-chat__message ai-chat__message--bot">
                   <div class="ai-chat__message-content">
                     <p>
-                      Hello! I'm KUDAI, your friendly AI assistant. How can I
+                      Hello! I'm KUD, your friendly AI assistant. How can I
                       help you today?
                     </p>
                   </div>
@@ -670,15 +670,11 @@
           startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
           contractSlider.style.cursor = 'grabbing';
           
-          // Pause animation
-          sliderElement.style.animationPlayState = 'paused';
-          
-          // Get current position from animation or manual transform
+          // Get current position
           const computedStyle = window.getComputedStyle(sliderElement);
           const currentTransform = computedStyle.transform;
           
           if (currentTransform !== 'none' && currentTransform !== 'matrix(1, 0, 0, 1, 0, 0)') {
-            // Extract translateX value from transform
             const match = currentTransform.match(/translateX\(([^)]+)\)/);
             if (match) {
               currentTranslate = parseFloat(match[1]);
@@ -714,12 +710,9 @@
           if (currentTranslateX < 50) {
             sliderElement.style.transform = 'translateX(0%)';
             currentTranslate = 0;
-            sliderElement.style.animationPlayState = 'running';
-            sliderElement.style.animationDelay = '0s';
           } else {
             sliderElement.style.transform = 'translateX(100%)';
             currentTranslate = 100;
-            sliderElement.style.animationPlayState = 'paused';
           }
         }
 

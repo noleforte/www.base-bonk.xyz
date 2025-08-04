@@ -1194,7 +1194,6 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   font-size: 14px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border: 2px solid #fff;
-  animation: stickerHint 4s infinite;
   will-change: transform;
 }
 
@@ -1210,21 +1209,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   -ms-user-select: none;
 }
 
-@keyframes stickerHint {
-  0%, 80%, 100% {
-    transform: translateX(0%);
-  }
-  40% {
-    transform: translateX(15%);
-  }
-  60% {
-    transform: translateX(8%);
-  }
-}
 
-.contract__slider.animation-paused {
-  animation-play-state: paused;
-}
 
 .contract__content {
   position: relative;
