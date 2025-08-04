@@ -281,11 +281,14 @@
                   <strong>Burnt</strong>
                 </div>
               </div>
-              <div class="tokenomics__contract contract">
-                <p class="contract__contract">
-                  0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9
-                </p>
-                <button class="contract__btn btn">Copy</button>
+              <div class="tokenomics__contract contract" id="contract-slider">
+                <div class="contract__slider"></div>
+                <div class="contract__content">
+                  <p class="contract__contract">
+                    0x2Dc1C8BE620b95cBA25D78774F716F05B159C8B9
+                  </p>
+                  <button class="contract__btn btn">Copy</button>
+                </div>
               </div>
             </div>
           </div>
@@ -644,13 +647,63 @@
         }
       }
 
-      // Event listeners
-      chatSend.addEventListener("click", sendMessage);
-      chatInput.addEventListener("keypress", (e) => {
-        if (e.key === "Enter") {
-          sendMessage();
+              // Event listeners
+        chatSend.addEventListener("click", sendMessage);
+        chatInput.addEventListener("keypress", (e) => {
+          if (e.key === "Enter") {
+            sendMessage();
+          }
+        });
+
+        // Contract Slider JavaScript
+        const contractSlider = document.getElementById('contract-slider');
+        const sliderElement = contractSlider.querySelector('.contract__slider');
+        let isDragging = false;
+        let startX = 0;
+        let currentTranslate = -85;
+
+        function startDragging(e) {
+          isDragging = true;
+          startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+          contractSlider.style.cursor = 'grabbing';
         }
-      });
+
+        function drag(e) {
+          if (!isDragging) return;
+          e.preventDefault();
+          
+          const currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+          const diff = currentX - startX;
+          const containerWidth = contractSlider.offsetWidth;
+          const translateX = Math.max(-85, Math.min(0, currentTranslate + (diff / containerWidth) * 100));
+          
+          sliderElement.style.transform = `translateX(${translateX}%)`;
+        }
+
+        function stopDragging() {
+          isDragging = false;
+          contractSlider.style.cursor = 'grab';
+          
+          // Snap to either fully open or closed
+          const currentTranslateX = parseFloat(sliderElement.style.transform.replace('translateX(', '').replace('%)', ''));
+          if (currentTranslateX > -42.5) {
+            sliderElement.style.transform = 'translateX(0%)';
+            currentTranslate = 0;
+          } else {
+            sliderElement.style.transform = 'translateX(-85%)';
+            currentTranslate = -85;
+          }
+        }
+
+        // Mouse events
+        contractSlider.addEventListener('mousedown', startDragging);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', stopDragging);
+
+        // Touch events for mobile
+        contractSlider.addEventListener('touchstart', startDragging);
+        document.addEventListener('touchmove', drag);
+        document.addEventListener('touchend', stopDragging);
     </script>
   </body>
 </html>

@@ -1158,7 +1158,32 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   padding: 10px 24px;
   font-size: 24px;
   display: flex;
-  align-items: center
+  align-items: center;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.contract:active {
+  cursor: grabbing;
+}
+
+.contract__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #3ff4ff 0%, #315aff 50%, #3ff4ff 100%);
+  transform: translateX(-85%);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 38px;
+}
+
+.contract__content {
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1024px) {
