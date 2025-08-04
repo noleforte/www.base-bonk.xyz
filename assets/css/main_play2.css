@@ -663,17 +663,21 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .about__left {
   position: absolute;
-  top: 0;
+  top: 70%;
   left: 0;
-  z-index: -1
+  z-index: 0;
+  width: 5%;
+  height: auto;
 }
 
 .about__right {
   position: absolute;
   right: 0;
-  bottom: 0;
-  z-index: -1;
-  max-width: 90vw
+  bottom: -46%;
+  z-index: 0;
+  max-width: 90vw;
+  width: 5%;
+  height: auto;
 }
 
 .about__container {
