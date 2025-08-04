@@ -878,7 +878,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .ai-chat__message {
-  margin-bottom: 20px;
+  margin-bottom: 35%;
   display: flex;
   flex-direction: column;
 }
