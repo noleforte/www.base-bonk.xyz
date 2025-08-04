@@ -669,7 +669,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   z-index: 0;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
   .about__left {
     transform: scale(0.7);
   }
@@ -683,7 +683,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   max-width: 90vw;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
   .about__right {
     transform: scale(0.7);
   }
