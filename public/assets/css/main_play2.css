@@ -1440,18 +1440,27 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .footer__disclaimer {
-  width: 33%;
+  width: 100%;
   font-size: 16px;
   line-height: 1.2;
   color: #2f2f2f;
-  font-family: "Friends Zone"
+  font-family: "Friends Zone";
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  z-index: 1000;
+  text-align: center;
 }
 
 @media screen and (max-width: 1023.98px) {
   .footer__disclaimer {
-    max-width: 480px;
     width: 100%;
-    text-align: center
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
   }
 }
 
