@@ -1,9 +1,0 @@
-{
-  "name": "netlify-functions",
-  "version": "1.0.0",
-  "description": "Netlify Functions for KUDAI website",
-  "main": "chat.js",
-  "dependencies": {
-    "node-fetch": "^2.6.1"
-  }
-} 

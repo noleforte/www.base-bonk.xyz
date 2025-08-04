@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 module.exports = async (req, res) => {
   // Добавляем CORS заголовки
   res.setHeader('Access-Control-Allow-Origin', '*');
