@@ -195,7 +195,7 @@ video {
   text-align: center;
   width: -moz-max-content;
   width: max-content;
-  background: #FF5E00;
+  background: #ff25ff;
   border: 3px solid #101228;
   font-family: "Burger Free", system-ui;
   font-size: 24px;
@@ -611,7 +611,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .hero__social-btn {
-  background: #FF5E00
+  background: #ff25ff
 }
 
 .hero__social-btn:hover {
@@ -633,7 +633,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .cex__social-btn {
-  background: #FF5E00
+  background: #ff25ff
 }
 
 .cex__social-btn:hover {
