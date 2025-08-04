@@ -1,0 +1,22 @@
+<svg width="44" height="52" viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Jupiter planet circle -->
+  <circle cx="22" cy="26" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+  
+  <!-- Jupiter's main stripes - more prominent like in the image -->
+  <path d="M4 20 L40 20" stroke="currentColor" stroke-width="2" opacity="0.8"/>
+  <path d="M4 26 L40 26" stroke="currentColor" stroke-width="2.5" opacity="1"/>
+  <path d="M4 32 L40 32" stroke="currentColor" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Additional subtle stripes -->
+  <path d="M4 16 L40 16" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+  <path d="M4 36 L40 36" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Jupiter's Great Red Spot -->
+  <ellipse cx="32" cy="22" rx="3" ry="2" fill="currentColor" opacity="0.6"/>
+  
+  <!-- Small moons -->
+  <circle cx="8" cy="12" r="1.5" fill="currentColor"/>
+  <circle cx="36" cy="40" r="1.5" fill="currentColor"/>
+  <circle cx="8" cy="40" r="1" fill="currentColor"/>
+  <circle cx="36" cy="12" r="1" fill="currentColor"/>
+</svg> 
