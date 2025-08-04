@@ -671,7 +671,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 @media screen and (max-width: 1440px) {
   .about__left {
-    transform: scale(0.7);
+    height: 50%;
+    width: auto;
+    top: 10%;
   }
 }
 
@@ -685,7 +687,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 @media screen and (max-width: 1440px) {
   .about__right {
-    transform: scale(0.7);
+    height: 50%;
+    width: auto;
+    bottom: 10%;
   }
 }
 
