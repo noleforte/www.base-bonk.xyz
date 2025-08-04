@@ -844,7 +844,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   border: 6px solid #101228;
   border-radius: 36px;
   display: flex;
-  padding: 72px;
+  padding: 30px;
   align-items: center;
   max-width: 1260px;
   margin: 0 auto;
