@@ -701,8 +701,10 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 .about__container {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 90px;
   z-index: 2;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1280px) {
@@ -838,12 +840,12 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   border: 6px solid #101228;
   border-radius: 36px;
   display: flex;
-  padding: 80px;
+  padding: 72px;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1260px;
   margin: 0 auto;
-  width: 98%;
-  min-height: 600px;
+  width: 88%;
+  min-height: 540px;
 }
 
 @media screen and (max-width: 800px) {
