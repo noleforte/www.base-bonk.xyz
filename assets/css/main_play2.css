@@ -782,7 +782,10 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1
+  z-index: 1;
+  width: auto;
+  height: 35%;
+  margin-bottom: 9%;
 }
 
 .tokenomics__inner {
@@ -962,7 +965,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .tokenomics__col {
   padding: 20px 20px 20px 0px;
-  width: 66%
+  width: 61%
 }
 
 @media screen and (max-width: 1280px) {
@@ -997,9 +1000,10 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .tokenomics__row {
   display: flex;
-  justify-content: flex-start;
-  gap: 12px;
-  margin-bottom: 20px;
+    /* justify-content: unset; */
+    gap: 26px;
+    margin-bottom: 54px;
+    margin-left: 35%;
 }
 
 @media screen and (max-width: 640px) {
@@ -1056,7 +1060,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 @media screen and (min-width: 1024px) {
   .tokenomics__contract.contract {
-    margin-right: -38%;
+    margin-right: -69%;
   }
 }
 
@@ -1070,7 +1074,6 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .contract__contract {
   width: calc(100% - 150px);
-  word-break: break-all
 }
 
 @media screen and (max-width: 1023.98px) {
