@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Based Bonk website with AI chat bot",
   "main": "index.htm",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "npx serve public",
     "build": "echo 'Static site - no build needed'",
