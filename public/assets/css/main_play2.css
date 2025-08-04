@@ -892,6 +892,18 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
     font-size: 14px;
     width: 100%;
   }
+  
+  .about__left {
+    z-index: -1;
+  }
+  
+  .about__right {
+    z-index: -1;
+  }
+  
+  .tokenomics__left {
+    z-index: -1;
+  }
 }
 
 .ai-chat__col {
