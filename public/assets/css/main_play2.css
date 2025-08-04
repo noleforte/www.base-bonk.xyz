@@ -693,6 +693,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   .container{
     width: 94% !important;
   }
+  .about__container{
+    max-width: 100%;
+  }
   .hero__illustration2 {
     margin-left: -2.5rem;
   }
@@ -815,7 +818,8 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 @media screen and (max-width: 640px) {
   .about__title {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    max-width: 50%;
   }
 }
 
@@ -1039,6 +1043,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
     width: 86%;
     margin-bottom: -11%;
   }
+
 }
 
 .ai-chat__messages {
