@@ -670,16 +670,26 @@
           startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
           contractSlider.style.cursor = 'grabbing';
           
-          // Pause animation and get current position
+          // Pause animation
           sliderElement.style.animationPlayState = 'paused';
+          
+          // Get current position from animation or manual transform
           const computedStyle = window.getComputedStyle(sliderElement);
           const currentTransform = computedStyle.transform;
-          if (currentTransform !== 'none') {
-            const matrix = new DOMMatrix(currentTransform);
-            currentTranslate = (matrix.m41 / sliderElement.offsetWidth) * 100;
+          
+          if (currentTransform !== 'none' && currentTransform !== 'matrix(1, 0, 0, 1, 0, 0)') {
+            // Extract translateX value from transform
+            const match = currentTransform.match(/translateX\(([^)]+)\)/);
+            if (match) {
+              currentTranslate = parseFloat(match[1]);
+            } else {
+              currentTranslate = 0;
+            }
           } else {
             currentTranslate = 0;
           }
+          
+          console.log('Current translate:', currentTranslate);
         }
 
         function drag(e) {
@@ -691,7 +701,7 @@
           const containerWidth = contractSlider.offsetWidth;
           const translateX = Math.max(0, Math.min(100, currentTranslate + (diff / containerWidth) * 100));
           
-          console.log('Dragging:', translateX);
+          console.log('Dragging:', translateX, 'diff:', diff, 'containerWidth:', containerWidth);
           sliderElement.style.transform = `translateX(${translateX}%)`;
         }
 
@@ -722,6 +732,8 @@
         contractSlider.addEventListener('touchstart', startDragging);
         document.addEventListener('touchmove', drag);
         document.addEventListener('touchend', stopDragging);
+        
+        console.log('Event listeners attached to:', contractSlider);
     </script>
   </body>
 </html>
