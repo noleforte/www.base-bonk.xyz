@@ -839,7 +839,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   }
   
   .ai-chat__messages {
-    max-height: 350px;
+    max-height: 450px;
   }
   
   .ai-chat__input-container {
@@ -861,7 +861,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   }
   
   .ai-chat__messages {
-    max-height: 300px;
+    max-height: 400px;
     padding: 15px;
     margin-bottom: 20px;
   }
@@ -920,7 +920,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 }
 
 .ai-chat__messages {
-  max-height: 400px;
+  max-height: 500px;
   overflow-y: auto;
   margin-bottom: 30px;
   padding: 20px;
