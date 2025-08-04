@@ -1165,6 +1165,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  touch-action: pan-y;
 }
 
 .contract:active {
@@ -1191,7 +1192,8 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   font-size: 14px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border: 2px solid #fff;
-  animation: stickerHint 4s infinite;
+  /* animation: stickerHint 4s infinite; */
+  will-change: transform;
 }
 
 .contract__slider::before {
@@ -1297,11 +1299,16 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 .buy__title {
   margin-bottom: 32px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buy__title img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .cex__title {

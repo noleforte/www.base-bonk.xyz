@@ -661,8 +661,11 @@
         let isDragging = false;
         let startX = 0;
         let currentTranslate = 0;
+        
+        console.log('Contract slider initialized:', contractSlider, sliderElement);
 
         function startDragging(e) {
+          console.log('Start dragging');
           isDragging = true;
           startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
           contractSlider.style.cursor = 'grabbing';
@@ -678,6 +681,7 @@
           const containerWidth = contractSlider.offsetWidth;
           const translateX = Math.max(0, Math.min(100, currentTranslate + (diff / containerWidth) * 100));
           
+          console.log('Dragging:', translateX);
           sliderElement.style.transform = `translateX(${translateX}%)`;
         }
 
