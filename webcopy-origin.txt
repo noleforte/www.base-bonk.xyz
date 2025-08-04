@@ -1,0 +1,68 @@
+Uri: https://www.base-bonk.xyz/
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\index.htm
+Content Type: text/html
+
+Uri: https://www.base-bonk.xyz/assets/css/main_play2.css
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\css\main_play2.css
+Content Type: text/css
+
+Uri: https://www.base-bonk.xyz/assets/fonts/burgerfree.woff
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\fonts\burgerfree.woff
+Content Type: font/woff
+
+Uri: https://www.base-bonk.xyz/assets/fonts/friendszone.otf
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\fonts\friendszone.otf
+Content Type: font/otf
+
+Uri: https://www.base-bonk.xyz/assets/fonts/friendszone.woff
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\fonts\friendszone.woff
+Content Type: font/woff
+
+Uri: https://www.base-bonk.xyz/assets/img/about-decor-left.png
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\about-decor-left.png
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/about-left.png
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\about-left.png
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/about-right.png
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\about-right.png
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/arrow-down.svg
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\arrow-down.svg
+Content Type: image/svg+xml
+
+Uri: https://www.base-bonk.xyz/assets/img/backkk.png
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\backkk.png
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/Frame 91 (1).png
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\Frame 91 (1).png
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/IMG_8413.PNG
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\IMG_8413.PNG
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/IMG_8414.PNG
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\IMG_8414.PNG
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/IMG_8415.PNG
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\IMG_8415.PNG
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/assets/img/mouse.svg
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\mouse.svg
+Content Type: image/svg+xml
+
+Uri: https://www.base-bonk.xyz/assets/img/tokenomics-left.png
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\tokenomics-left.png
+Content Type: image/png
+
+Uri: https://www.base-bonk.xyz/index.html
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\index.html
+Content Type: text/html
+
