@@ -38,8 +38,8 @@ Uri: https://www.base-bonk.xyz/assets/img/backkk.png
 File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\backkk.png
 Content Type: image/png
 
-Uri: https://www.base-bonk.xyz/assets/img/Frame 91 (1).png
-File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\Frame 91 (1).png
+Uri: https://www.base-bonk.xyz/assets/img/Frame 91.png
+File Name: C:\Downloaded Web Sites\www.base-bonk.xyz\assets\img\Frame 91.png
 Content Type: image/png
 
 Uri: https://www.base-bonk.xyz/assets/img/IMG_8413.PNG
