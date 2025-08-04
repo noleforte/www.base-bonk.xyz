@@ -667,7 +667,6 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   top: 0;
   left: 0;
   z-index: 1;
-  transform: scale(0.5);
 }
 
 .about__right {
@@ -676,7 +675,6 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   bottom: 0;
   z-index: 1;
   max-width: 90vw;
-  transform: scale(0.5);
 }
 
 .about__container {
@@ -773,7 +771,6 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   bottom: 0;
   left: 0;
   z-index: 1;
-  transform: scale(0.5);
 }
 
 .tokenomics__inner {
