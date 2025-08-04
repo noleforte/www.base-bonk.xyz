@@ -942,8 +942,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .ai-chat__title img {
   max-width: 100%;
-  height: auto;
-  width: 70%;
+    height: auto;
+    width: 30%;
+    margin-left: 34%;
 }
 
 @media screen and (max-width: 800px) {
