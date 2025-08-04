@@ -837,6 +837,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   .tokenomics__row{
     flex-wrap: wrap;
   }
+  tokenomics__contract.contract{
+    margin-right: 0;
+  }
 }
 
 .tokenomics__row {
@@ -896,6 +899,12 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   font-size: 24px;
   display: flex;
   align-items: center
+}
+
+@media screen and (min-width: 1024px) {
+  .tokenomics__contract.contract {
+    margin-right: -38%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -972,6 +981,9 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 @media screen and (max-width: 640px) {
   .buy__title {
     font-size: 80px
+  }
+  tokenomics__contract.contract{
+    margin-right: 0;
   }
 }
 
