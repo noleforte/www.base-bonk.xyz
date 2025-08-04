@@ -1023,7 +1023,13 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   border-radius: 20px;
   border: 3px solid #101228;
 }
-
+.ai-chat__title{
+  margin-bottom: 28px;
+}
+.ai-chat__title img{
+  width: 100%;
+  margin-left: 1%;
+}
 .ai-chat__message {
   display: flex;
   flex-direction: column;
