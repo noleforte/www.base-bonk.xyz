@@ -748,7 +748,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 .about__text {
   font-size: 24px;
   line-height: 1.4;
-  color: #3ff4ff;
+  color: black;
 }
 
 @media screen and (max-width: 640px) {
