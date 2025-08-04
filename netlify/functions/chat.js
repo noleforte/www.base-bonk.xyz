@@ -1,38 +1,11 @@
 module.exports = async (req, res) => {
-  try {
-    // Добавляем CORS заголовки
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
 
-    // Обрабатываем preflight запросы
-    if (req.method === 'OPTIONS') {
-      return res.status(200).end();
-    }
-
-    if (req.method !== 'POST') {
-      return res.status(405).json({ error: 'Method not allowed' });
-    }
-
-    const { messages } = req.body;
-    console.log('Received messages:', messages);
-    console.log('API Key exists:', !!process.env.OPENAI_API_KEY);
-
-    // Проверяем валидность входящих данных
-    if (!messages || !Array.isArray(messages)) {
-      console.error('Invalid messages format:', messages);
-      return res.status(200).json({ 
-        reply: "Sorry, there was an error with the message format. Please try again." 
-      });
-    }
-
-    // Проверяем наличие API ключа
-    if (!process.env.OPENAI_API_KEY) {
-      console.error('OpenAI API key is missing');
-      return res.status(200).json({ 
-        reply: "Hello! I'm KUD, your friendly AI assistant. The AI service is currently being configured. Please try again later!" 
-      });
-    }
+  const { messages } = req.body;
+  console.log('Received messages:', messages);
+  console.log('API Key exists:', !!process.env.OPENAI_API_KEY);
 
   try {
     const requestBody = {
@@ -54,7 +27,6 @@ module.exports = async (req, res) => {
         'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify(requestBody),
-      signal: AbortSignal.timeout(30000), // 30 секунд таймаут
     });
 
     console.log('OpenAI response status:', openaiRes.status);
@@ -81,13 +53,7 @@ module.exports = async (req, res) => {
   } catch (error) {
     console.error('OpenAI request failed:', error);
     res.status(200).json({ 
-      reply: "Hello! I'm KUD, your friendly AI assistant. I'm having some technical difficulties right now, but I'll be back soon!" 
-    });
-  }
-  } catch (outerError) {
-    console.error('Function error:', outerError);
-    res.status(200).json({ 
-      reply: "Hello! I'm KUD, your friendly AI assistant. Something went wrong, but I'm here to help when the service is restored!" 
+      reply: "Sorry, I'm having trouble connecting right now. Please try again later!" 
     });
   }
 } 
