@@ -4,9 +4,9 @@
   "description": "Based Bonk website with AI chat bot",
   "main": "index.htm",
   "scripts": {
-    "dev": "npx serve .",
+    "dev": "npx serve public",
     "build": "echo 'Static site - no build needed'",
-    "start": "npx serve ."
+    "start": "npx serve public"
   },
   "dependencies": {
     "serve": "^14.0.0"
