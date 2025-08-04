@@ -134,14 +134,16 @@ table {
   font-family: "Burger Free";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/burgerfree.woff) format(woff), url(../fonts/burgerfree.otf) format(opentype)
+  src: url(../fonts/burgerfree.woff) format(woff), url(../fonts/burgerfree.otf) format(opentype);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Friends Zone";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/friendszone.woff) format(woff), url(../fonts/friendszone.otf) format(opentype)
+  src: url(../fonts/friendszone.woff) format(woff), url(../fonts/friendszone.otf) format(opentype);
+  font-display: swap;
 }
 
 *,
@@ -1431,7 +1433,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 .cex {
   padding: 50px 0;
   position: relative;
-  background: url(../img/Frame\ 92\ \(1\).png) left top no-repeat, #315aff;
+  background: #315aff;
   background-size: cover;
 }
 
@@ -1581,7 +1583,7 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 .footer {
   padding: 50px 0;
-   background: url(../img/Frame\ 92\ \(1\).png) left top repeat, #3ff4ff; 
+   background: #3ff4ff; 
 }
 
 .footer__container {

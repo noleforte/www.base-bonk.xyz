@@ -584,23 +584,24 @@
       });
 
       // Contract Slider JavaScript
-      const contractSlider = document.getElementById("contract-slider");
-      const sliderElement = contractSlider?.querySelector(".contract__slider");
-      let isDragging = false;
-      let startX = 0;
-      let currentTranslate = 0;
+      function initContractSlider() {
+        const contractSlider = document.getElementById("contract-slider");
+        const sliderElement = contractSlider?.querySelector(".contract__slider");
+        let isDragging = false;
+        let startX = 0;
+        let currentTranslate = 0;
 
-      console.log(
-        "Contract slider initialized:",
-        contractSlider,
-        sliderElement
-      );
+        console.log(
+          "Contract slider initialized:",
+          contractSlider,
+          sliderElement
+        );
 
-      // Проверяем, что элементы существуют
-      if (!contractSlider || !sliderElement) {
-        console.warn("Contract slider elements not found");
-        return;
-      }
+        // Проверяем, что элементы существуют
+        if (!contractSlider || !sliderElement) {
+          console.warn("Contract slider elements not found");
+          return;
+        }
 
       function startDragging(e) {
         if (!contractSlider || !sliderElement) return;
@@ -688,6 +689,10 @@
       document.addEventListener("touchend", stopDragging);
 
       console.log("Event listeners attached to:", contractSlider);
+      }
+
+      // Инициализируем слайдер
+      initContractSlider();
     </script>
   </body>
 </html>
