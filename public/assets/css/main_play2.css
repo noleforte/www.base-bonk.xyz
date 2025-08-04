@@ -819,11 +819,12 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
   border: 6px solid #101228;
   border-radius: 36px;
   display: flex;
-  padding: 60px;
+  padding: 80px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  width: 95%;
+  width: 98%;
+  min-height: 600px;
 }
 
 @media screen and (max-width: 800px) {
@@ -834,9 +835,10 @@ background-image: linear-gradient(to right, #004FF9 0%, #FFF94C  51%, #004FF9  1
 
 @media screen and (max-width: 640px) {
   .ai-chat__inner {
-    padding: 60px 20px;
-    width: 98%;
-    max-width: 800px;
+    padding: 80px 30px;
+    width: 99%;
+    max-width: 900px;
+    min-height: 500px;
   }
 }
 
